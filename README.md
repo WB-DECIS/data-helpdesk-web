@@ -1,7 +1,6 @@
 # data-helpdesk-web
 
-World Bank Data Help Desk
-https://datahelpdesk.worldbank.org/
+World Bank Data Help Desk: https://datahelpdesk.worldbank.org/
 
 ## WB Styling guide
 The Loop (branding guidelines for typography, colors, header and footer): https://theloop.worldbank.org/loop
