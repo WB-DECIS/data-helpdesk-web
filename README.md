@@ -15,4 +15,4 @@ The Loop (branding guidelines for typography, colors, header and footer): https:
 - https://wb-decis.github.io/data-helpdesk-web/data_helpdesk_web_test_03.html
 
 ## snapshots
-- https://wb-decis.github.io/data-helpdesk-web/snapshot_20240529/index.html
+- https://wb-decis.github.io/data-helpdesk-web/snapshot_20240529_1153am.html
