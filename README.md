@@ -5,6 +5,9 @@ World Bank Data Help Desk: https://datahelpdesk.worldbank.org/
 ## WB Styling guide
 The Loop (branding guidelines for typography, colors, header and footer): https://theloop.worldbank.org/loop
 
+## UserVoice admin page
+https://datahelpdesk.worldbank.org/admin
+
 ## UserVoice custom styling guidelines
 - https://help.uservoice.com/hc/en-us/articles/360035473793-Custom-HTML-CSS-and-JavaScript
 - https://help.uservoice.com/hc/en-us/articles/360035070154-Advanced-CSS-Custom-Design-with-body-Classes 
