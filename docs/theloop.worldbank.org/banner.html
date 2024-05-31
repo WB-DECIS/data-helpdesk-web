@@ -1,0 +1,773 @@
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en">
+ <!--<![endif]-->
+ <head> 
+  <!-- Basic Page Needs
+================================================== --> 
+  <meta charset="utf-8"> 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+  <!-- Mobile Specific Metas
+================================================== --> 
+  <meta name="HandheldFriendly" content="True"> 
+  <meta name="MobileOptimized" content="320"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <!-- Title and meta description
+================================================== --> 
+  <title> Banner</title> 
+  <meta property="og:title" content="The Loop Design System Documentation | Banner"> 
+  <meta name="description" content=""> 
+  <meta property="og:description" content=""> 
+  <link rel="canonical" href="http://localhost:4444/banner/"> 
+  <!--[if lt IE 9]>
+  <script src="/assets/js/vendor/html5shiv.js"></script>
+<![endif]--> 
+  <!-- Favicons
+================================================== --> 
+  <!-- 128x128 --> 
+  <link rel="shortcut icon" type="image/ico" href="content/dam/loop/assets/img/favicon.ico@cache=no"> 
+  <link rel="icon" type="image/png" href="content/dam/loop/assets/img/favicon.png@cache=no"> 
+  <!-- 192x192, as recommended for Android
+  http://updates.html5rocks.com/2014/11/Support-for-theme-color-in-Chrome-39-for-Android
+  --> 
+  <link rel="icon" type="image/png" sizes="192x192" href="content/dam/loop/assets/img/favicon.png@cache=no"> 
+  <!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices --> 
+  <link rel="apple-touch-icon-precomposed" href="content/dam/loop/assets/img/favicon.png@cache=no"> 
+  <!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini --> 
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="content/dam/loop/assets/img/favicon.png@cache=no"> 
+  <!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch --> 
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="content/dam/loop/assets/img/favicon.png@cache=no"> 
+  <!-- 144x144 (precomposed) for iPad 3rd and 4th generation --> 
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="content/dam/loop/assets/img/favicon.png@cache=no"> 
+  <!-- CSS
+================================================== --> 
+  <link rel="stylesheet" href="content/dam/loop/assets/css/styleguide.css@cache=no.css"> 
+ </head> 
+ <body class="page-banner "> 
+  <header class="loop-site-header" role="banner" id="main"> 
+   <div class="container" style=""> 
+    <button class="loop-menu-btn">Menu</button> 
+    <div class="loop-site-header-navbar" id="logo" style=""> 
+     <a href="index.html" class="loop-site-header-brand" title="Home" aria-label="Home"><img src="content/dam/loop/assets/img/loop-logo.png" alt="Logo" title="Logo"></a> 
+    </div> 
+    <ul class="loop-download-btn-top hidden-md hidden-sm hidden-xs"> 
+     <li> <a class="lp__btn lp__btn_xs lp__btn_primary_inverse" href="getting-started.html" onclick="ga('send', 'event', 'Clicked View how to install or work design system');"> GET STARTED </a> </li> 
+     <!-- <li>
+    <a class="lp__btn lp__btn_xs lp__btn_primary_inverse" href="/files/loop-1.0.0.zip" onclick="ga('send', 'event', 'Download', 'Clicked Clicked Download code and design files from inside site');">
+      DOWNLOAD
+    </a>
+    
+  </li>--> 
+    </ul> 
+    <nav class="loop-site-nav-secondary"> 
+     <ul> 
+      <li> <a href="getting-started.html">GETTING STARTED</a> </li> 
+      <li> <a href="colors.html">VISUAL STYLE</a> </li> 
+      <li> <a class="loop-current" href="components.html">COMPONENTS</a> </li> 
+      <!-- <li>
+        <a  href="/overview/">PAGE LAYOUTS</a>
+      </li> --> 
+      <li> <a href="practices.html">PRACTICES</a> </li>  
+      <li> <a href="header-footer.html">HEADER FOOTER</a> </li> 
+      <li> <a href="release-history.html">RELEASE HISTORY</a> </li> 
+     </ul> 
+    </nav> 
+   </div> 
+  </header> 
+  <div class="loop-overlay" style=""></div> 
+  <nav role="navigation" class="loop-nav sidenav-mobile"> 
+   <div class="loop-nav-inner" style=""> 
+    <button class="loop-nav-close"> <img src="content/dam/loop/assets/img/close.svg" alt="close"> </button> 
+    <ul class="loop-sidenav-list usa-accordion"> 
+     <li> <button class="usa-accordion-button" aria-expanded="false" aria-controls="side-nav-1">GETTING STARTED</button> 
+      <ul id="side-nav-1" class="loop-sidenav-sub_list"> 
+       <li> <a href="getting-started.html">Overview</a> </li> 
+      </ul> </li> 
+     <li> <button class="usa-accordion-button" aria-expanded="false" aria-controls="side-nav-2">VISUAL STYLE</button> 
+      <ul id="side-nav-2" class="loop-sidenav-sub_list"> 
+       <li> <a href="colors.html">Colors</a> </li> 
+       <li><a href="grid.html">Grid</a></li> 
+       <li> <a href="font-icon.html">Icons</a> </li> 
+       <li> <a href="images.html">Images</a> </li> 
+       <li> <a href="http://theloop.worldbank.org/logos">Logos</a> </li> 
+       <li> <a href="space.html">Space</a> </li> 
+       <li> <a href="typography.html">Typography</a> </li> 
+      </ul> </li>
+     <!-- End visual Style --> 
+     <li> <button class="loop-current" aria-expanded="true" aria-controls="side-nav-3">COMPONENTS</button> 
+      <ul id="side-nav-3" class="loop-sidenav-sub_list"> 
+       <li> <a href="components.html">Overview</a> </li> 
+       <li><a href="accordions.html">Accordions</a></li> 
+       <li><a href="alerts.html">Alert</a></li> 
+       <li><a href="badges.html">Badges</a></li> 
+       <li><a class="loop-current" href="banner.html">Banner</a></li> 
+       <li><a href="body-content.html">Body Content</a></li> 
+       <li><a href="buttons.html">Buttons</a> </li> 
+       <li><a href="breadcrumb.html">Breadcrumb</a></li> 
+       <li><a href="card.html">Card</a> </li> 
+       <li><a href="carousel.html">Carousel</a></li> 
+       <li><a href="checkbox.html">Checkbox</a></li> 
+       <li><a href="contact-us.html">Contact us</a></li> 
+       <li><a href="datepicker.html">Date picker</a></li> 
+       <li><a href="dropdown.html">Dropdown</a></li> 
+       <li><a href="email-sign-up.html">Email sign-up</a></li> 
+       <li><a href="experts.html">Experts</a></li> 
+       <li><a href="forms.html">Forms</a></li> 
+       <li><a href="header-footer.html">Header &amp; Footer</a></li> 
+       <li><a href="latest-list.html">Latest List</a></li> 
+       <li><a href="left-nav.html">Left navigation</a></li> 
+       <li><a href="link.html">Link List</a></li> 
+       <li><a href="list-navigation.html">List Navigation</a></li> 
+       <li><a href="modals.html">Modals</a></li> 
+       <li><a href="multimedia.html"> Multimedia</a></li> 
+       <li><a href="pagination.html"> Pagination</a></li> 
+       <li><a href="progress-bars.html"> Progress Bars</a></li> 
+       <li><a href="pullquote.html">Pullquote</a></li> 
+       <li><a href="radio.html">Radio Button</a></li> 
+       <li><a href="search_inputs_fields.html">Search Bars</a> </li> 
+       <li><a href="stay-connected.html">Stay Connected</a></li> 
+       <li><a href="synopsis.html">Synopsis</a></li> 
+       <li><a href="table.html">Table</a></li> 
+       <li><a href="tabs.html">Tabs</a></li> 
+       <li> <a href="inputs_fields.html">Text Inputs</a> </li> 
+       <li><a href="tooltips.html">Tooltips</a></li> 
+      </ul> </li>
+     <!-- End Components --> 
+     <!-- <li>
+        <button class="usa-accordion-button"
+          
+          
+            aria-expanded="false"
+          
+          aria-controls="side-nav-4">PAGE LAYOUTS</button>
+        <ul id="side-nav-4" class="loop-sidenav-sub_list">
+    <li>
+      <a  href="/overview/">Home page</a>
+    </li>
+        <li>
+      <a  href="/landing-page/">Landing Pages</a>
+    </li>
+        <li>
+      <a  href="/country/">Country</a>
+    </li>
+        <li>
+      <a  href="/topic/">Topics</a>
+    </li>
+   <li>
+      <a  href="/content-type/">News Content Type</a>
+    </li>
+
+        </ul>
+      </li>End Examples --> 
+     <li> <button class="usa-accordion-button" aria-expanded="false" aria-controls="side-nav-5">PRACTICES</button> 
+      <ul id="side-nav-5" class="loop-sidenav-sub_list"> 
+       <li> <a href="practices.html">Accessibility</a> </li> 
+      </ul> </li>
+     <!-- End Practicies --> 
+     <li> <button class="usa-accordion-button" aria-expanded="false" aria-controls="side-nav-6">RELEASE HISTORY</button> 
+      <ul id="side-nav-6" class="loop-sidenav-sub_list"> 
+       <li> <a href="release-history.html">Overview</a> </li> 
+      </ul> </li>
+     <!-- End Practicies --> 
+    </ul> 
+   </div> 
+  </nav> 
+  <section class="styleguide-top-content dark-blue"> 
+   <div class="container" style=""> 
+    <h1 class="loop-section-category">components</h1> 
+   </div> 
+  </section> 
+  <main id="main-content" style="padding: 16px 0px 0px 0px;"> 
+   <div class="container" style=""> 
+    <h6><a href="components.html">back to components</a></h6> 
+   </div> 
+  </main> 
+  <div class="banner-container_section" style=""> 
+   <div style=" padding:16px 0px 32px 0px;"> 
+    <div class="container" style=""> 
+     <h6>Banner v1</h6> 
+    </div> 
+    <div class="loop-preview " style=""> 
+     <div class="lp__banner_landing v1" style=""> 
+      <div class="lp__banner_fullwidth" style=""> 
+       <div class="lp__banner_img" style=""> 
+        <img src="content/dam/loop/assets/img/fullwidth-1.jpg" class="lp__img_responsive cover_image" alt="image" title="image"> 
+        <span class="img-gradient"></span> 
+       </div> 
+       <div class="container banner-container" style=""> 
+        <div class="row" style=""> 
+         <div class="lp__banner_img_overlay_v1 col-xl-10 col-lg-10 col-md-12 col-sm-12 col-xs-12" style=""> 
+          <h1 class="lp__banner_title">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</h1> 
+          <p class="lp__banner_description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. </p> 
+         </div> 
+        </div> 
+       </div> 
+      </div> 
+      <p></p>
+     </div> 
+    </div>
+    <p></p> 
+    <p></p>
+   </div>
+   <p></p> 
+   <div class="container" style=""> 
+    <div class="row" style=""> 
+     <div class="col-md-12 col-xs-12" style=""> 
+      <section class="loop-code-tabs"> 
+       <tab> 
+        <tab-nav> 
+         <div class="lp__wrapper" style=""> 
+          <ul class="tab_list"> 
+           <li><a class="lp__tab_active lp__text_center">DEVELOPER GUIDELINES</a></li> 
+           <li><a class="lp__text_center">DESIGNER GUIDELINES</a></li> 
+           <li><a class="lp__text_center">EXAMPLE</a></li> 
+          </ul> 
+         </div> 
+        </tab-nav> 
+        <tab-content> 
+         <ul class="tab_content_list"> 
+          <li class="tab_active"> 
+           <div class="loop-accordion-content" style=""> 
+            <pre><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>lp__banner_landing v1<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>  
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>lp__banner_fullwidth<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>lp__banner_img<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>../assets/img/fullwidth-1.jpg<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>lp__img_responsive cover_image<span class="token punctuation">"</span></span> <span class="token attr-name">alt</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>image<span class="token punctuation">"</span></span> <span class="token attr-name">title</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>image<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>img-gradient<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>  
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>container banner-container<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>  
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>row<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>lp__banner_img_overlay_v1 col-xl-10 col-lg-10 col-md-12 col-sm-12 col-xs-12<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>lp__banner_title<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>lp__banner_description<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>   
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre> 
+           </div> </li> 
+          <li class="loop-accordion-content"> <h6>Use:</h6> <p>On pages that benefit from a striking, unique visual identity. This generally includes landing pages like <a href="http://www.worldbank.org/en/understanding-poverty">Understanding Poverty</a>, <a href="http://www.worldbank.org/en/what-we-do">What We Do</a>, <a href="http://www.worldbank.org/en/where-we-work">Where We Work</a>.</p> <br> <h6>Don't use:</h6> <p>On Country, Region, Topic, News Content pages, or any pages that are consistently employ any other specific Banner style.</p> <br> <h6>Editorial:</h6> <p>Description text for this banner should offer an impactful summary of the content and goals of the page. For reference look at any top-level page in the WB site, the banner image and the description work together to humanize the content of the page by using intimate imagery and almost conversational introductory text (e.g. <a href="http://www.worldbank.org/en/understanding-poverty"> Understanding Poverty</a>). The description should be kept reasonably brief, generally no longer than two sentences or three lines of text at full screen.</p> </li> 
+          <li class="loop-accordion-content"> <a href="http://www.worldbank.org/en/where-we-work">Where We Work:</a> </li> 
+         </ul> 
+        </tab-content> 
+       </tab> 
+      </section> 
+     </div> 
+     <p></p>
+    </div> 
+   </div>
+   <p></p> 
+   <div style=" padding:16px 0px 32px 0px;"> 
+    <div class="container" style=""> 
+     <h6>Banner v2</h6> 
+    </div> 
+    <div class="loop-preview " style=""> 
+     <div class="lp__banner_landing v2" style=""> 
+      <div class="lp__banner_fullwidth" style=""> 
+       <div class="lp__banner_img" style=""> 
+        <img src="content/dam/loop/assets/img/fullwidth-2.jpg" class="lp__img_responsive cover_image" alt="image" title="image"> 
+        <span class="img-gradient"></span> 
+       </div> 
+       <div class="container banner-container" style=""> 
+        <div class="row" style=""> 
+         <div class="lp__banner_img_overlay_v2 col-xl-5 col-lg-5 col-md-12 col-sm-12 col-xs-12" style=""> 
+          <h3 class="lp__banner_title">consectetuer adipiscing elit.</h3> 
+          <p class="lp__banner_description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p> 
+          <div class="lp__btn_group_horizontal" style=""> 
+           <a href="banner.html#" class="lp__btn lp__btn_sm lp__btn_primary_white">Read More</a> 
+           <a href="banner.html#" class="lp__btn lp__btn_sm lp__btn_primary_white">Learn More</a> 
+          </div> 
+         </div> 
+        </div> 
+       </div> 
+      </div> 
+      <p></p>
+     </div> 
+    </div>
+    <p></p> 
+    <p></p>
+   </div>
+   <p></p> 
+   <div class="container" style=""> 
+    <div class="row" style=""> 
+     <div class="col-md-12 col-xs-12" style=""> 
+      <section class="loop-code-tabs"> 
+       <tab> 
+        <tab-nav> 
+         <div class="lp__wrapper" style=""> 
+          <ul class="tab_list"> 
+           <li><a class="lp__tab_active lp__text_center">DEVELOPER GUIDELINES</a></li> 
+           <li><a class="lp__text_center">DESIGNER GUIDELINES</a></li> 
+           <li><a class="lp__text_center">EXAMPLE</a></li> 
+          </ul> 
+         </div> 
+        </tab-nav> 
+        <tab-content> 
+         <ul class="tab_content_list"> 
+          <li class="tab_active"> 
+           <div class="loop-accordion-content" style=""> 
+            <pre><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>lp__banner_landing v2<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>  
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>lp__banner_fullwidth<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>lp__banner_img<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>../assets/img/fullwidth-2.jpg<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>lp__img_responsive cover_image<span class="token punctuation">"</span></span> <span class="token attr-name">alt</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>image<span class="token punctuation">"</span></span> <span class="token attr-name">title</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>image<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>img-gradient<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>  
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>container banner-container<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>  
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>row<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>lp__banner_img_overlay_v2 col-xl-5 col-lg-5 col-md-12 col-sm-12 col-xs-12<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h3</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>lp__banner_title<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>consectetuer adipiscing elit.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h3</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>lp__banner_description<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>lp__btn_group_horizontal<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>lp__btn lp__btn_sm lp__btn_primary_white<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Read More<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span> 
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>lp__btn lp__btn_sm lp__btn_primary_white<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Learn More<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span> 
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>   
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre> 
+           </div> </li> 
+          <li class="loop-accordion-content"> <h6>Use:</h6> <p>On landing pages which require a clear call to action which is high priority on the page.</p> <br> <h6>Don't use:</h6> <p>On Country, Region, Topic, News Content pages, or any pages that are consistently employ any other specific Banner style.</p> <br> <h6>Visual Style:</h6> <p>The Buttons on this banner variation must be horizontally aligned. The color and pattern of the banner image should be considered when choosing button color variation so that the buttons have appropriate contrast and are easily visible.</p> <br> <h6>Behavior:</h6> <p>The banner should be completely static with the exception of the button hover states outlined in the Buttons section.</p> <br> <h6>Responsiveness:</h6> <p>On mobile devices the text and buttons will move from the banner image to a sub-banner with a white background so that the primary subject of the banner is not obscured.</p> </li> 
+          <li class="loop-accordion-content"> <a href="http://www.worldbank.org/en/work-with-us">Work With Us:</a> <p>This example employs this banner because it highlights the primary desired point of interaction for the page.</p> </li> 
+         </ul> 
+        </tab-content> 
+       </tab> 
+      </section> 
+     </div> 
+     <p></p>
+    </div> 
+   </div>
+   <p></p> 
+   <!-- <div style="padding:16px 0px 32px 0px;">
+    <div class="container">
+<h6>Banner v3</h6>
+</div>
+<div class="loop-preview ">
+  <div class="lp__banner_landing lp__homepage_banner">  
+<div class="lp__banner_fixedwidth">
+    <div class="lp__homepage_banner_wrapper">
+    <div class="lp__banner_img_v3">
+    <img src="../assets/img/fullwidth-7.jpg" class="lp__img_responsive cover_image" alt="image" title="image">
+    </div> 
+        <div class="_banner_social_btn hidden-xl hidden-lg">
+            <a href="#" class="social-btn"><i class="loop loop-facebook" aria-hidden="true"></i></a>
+            <a href="#" class="social-btn"><i class="loop loop-twitter" aria-hidden="true"></i></a>
+            <a href="#" class="social-btn"><i class="loop loop-instagram" aria-hidden="true"></i></a>
+        </div>
+    <div class="lp__banner_img_overlay_v3 col-xl-9 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <section class="lp__homepage_banner_content">
+            <h3 class="lp__banner_title"><a href="#">HOW SOLAR IS CHANGING THE CLIMATE GAME </a></h3>
+            <p class="lp__banner_description">Developing countries carried out more than 75% of the 283 business reforms in the past year, with Sub-Saharan Africa accounting for more than 25% of all reforms.</p>
+        <div class="banner_btn">
+        <div class="lp__btn_group_horizontal">
+            <a href="#" class="lp__btn lp__btn_xs lp__cta_btn_gradient">Full Report</a> 
+            <a href="#" class="lp__btn lp__btn_xs lp__cta_btn_gradient">Website</a>
+            <a href="#" class="lp__btn lp__btn_xs lp__cta_btn_gradient">Video</a> 
+            <a href="#" class="lp__btn lp__btn_xs lp__cta_btn_gradient">Infographic</a>
+            <a href="#" class="lp__btn lp__btn_xs lp__cta_btn_gradient">Dataset</a> 
+            <a href="#" class="lp__btn lp__btn_xs lp__cta_btn_gradient">Media</a> 
+        </div>
+        <div class="_banner_social_btn hidden-md hidden-sm hidden-xs">
+            <a href="#" class="social-btn" title="facebook"><i class="loop loop-facebook" aria-hidden="true"></i></a>
+            <a href="#" class="social-btn" title="twitter"><i class="loop loop-twitter" aria-hidden="true"></i></a>
+            <a href="#" class="social-btn" title="instagram"><i class="loop loop-instagram" aria-hidden="true"></i></a>
+        </div>
+        </div>
+    
+        </section>
+    </div> 
+    </div>
+</div>
+</div>
+</div>
+
+</div>
+
+<div class="container">
+<div class="row">
+<div class="col-md-12 col-xs-12">
+    <section class="loop-code-tabs">
+<tab>
+    <tab-nav>
+            <div class="lp__wrapper">
+                    <ul class="tab_list">
+                        <li><a class="lp__tab_active lp__text_center">DEVELOPER GUIDELINES</a></li>
+                        <li><a class="lp__text_center">DESIGNER GUIDELINES</a></li>  
+                        <li><a class="lp__text_center">EXAMPLE</a></li>  
+                    </ul>
+            </div>
+    </tab-nav>
+    <tab-content>
+            <ul class="tab_content_list">
+                <li class="tab_active">
+                    <div class="loop-accordion-content">
+                       
+<pre><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>lp__banner_landing lp__homepage_banner<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>  
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>lp__banner_fixedwidth<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>lp__homepage_banner_wrapper<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>lp__banner_img_v3<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>../assets/img/fullwidth-7.jpg<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>lp__img_responsive cover_image<span class="token punctuation">"</span></span> <span class="token attr-name">alt</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>image<span class="token punctuation">"</span></span> <span class="token attr-name">title</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>image<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span> 
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>_banner_social_btn hidden-xl hidden-lg<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>social-btn<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>i</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>loop loop-facebook<span class="token punctuation">"</span></span> <span class="token attr-name">aria-hidden</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>true<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>i</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>social-btn<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>i</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>loop loop-twitter<span class="token punctuation">"</span></span> <span class="token attr-name">aria-hidden</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>true<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>i</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>social-btn<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>i</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>loop loop-instagram<span class="token punctuation">"</span></span> <span class="token attr-name">aria-hidden</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>true<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>i</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>lp__banner_img_overlay_v3 col-xl-9 col-lg-12 col-md-12 col-sm-12 col-xs-12<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>section</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>lp__homepage_banner_content<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h3</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>lp__banner_title<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>HOW SOLAR IS CHANGING THE CLIMATE GAME <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h3</span><span class="token punctuation">></span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>lp__banner_description<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Developing countries carried out more than 75% of the 283 business reforms in the past year, with Sub-Saharan Africa accounting for more than 25% of all reforms.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>banner_btn<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>lp__btn_group_horizontal<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>lp__btn lp__btn_xs lp__cta_btn_gradient<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Full Report<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span> 
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>lp__btn lp__btn_xs lp__cta_btn_gradient<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Website<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>lp__btn lp__btn_xs lp__cta_btn_gradient<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Video<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span> 
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>lp__btn lp__btn_xs lp__cta_btn_gradient<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Infographic<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>lp__btn lp__btn_xs lp__cta_btn_gradient<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Dataset<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span> 
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>lp__btn lp__btn_xs lp__cta_btn_gradient<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Media<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span> 
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>_banner_social_btn hidden-md hidden-sm hidden-xs<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>social-btn<span class="token punctuation">"</span></span> <span class="token attr-name">title</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>facebook<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>i</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>loop loop-facebook<span class="token punctuation">"</span></span> <span class="token attr-name">aria-hidden</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>true<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>i</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>social-btn<span class="token punctuation">"</span></span> <span class="token attr-name">title</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>twitter<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>i</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>loop loop-twitter<span class="token punctuation">"</span></span> <span class="token attr-name">aria-hidden</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>true<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>i</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>social-btn<span class="token punctuation">"</span></span> <span class="token attr-name">title</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>instagram<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>i</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>loop loop-instagram<span class="token punctuation">"</span></span> <span class="token attr-name">aria-hidden</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>true<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>i</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+    
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>section</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span> 
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span></code></pre>
+
+
+
+                    </div>
+                </li>
+                <li class="loop-accordion-content">DESIGNER N/A</li>
+                <li class="loop-accordion-content">EXAMPLE N/A</li>
+            </ul>
+    </tab-content>
+</tab>
+</section>
+</div>
+</div>
+</div>
+
+<div style=" padding:16px 0px 32px 0px;">
+    <div class="container">
+<h6>Banner v4</h6>
+</div>
+<div class="loop-preview ">
+  <div class="lp__banner_landing_v4"> 
+    <div class="lp__banner_img_v4">
+        <img id="lp__banner_bg_img" class="img-responsive cover_image hidden-sm hidden-xs" alt="Image" title="Image" src="../assets/img/fullwidth-7.jpg">
+        <span class="img-gradient"></span>
+    </div>
+    <div class="container banner-container">  
+        <div class="row">
+            <div class="col-lg-2 col-md-3 col-sm-12 col-xs-12">
+                <div class="circular_shape">
+                    <img src="../assets/img/country-hero.png" class="lp__img_responsive cover_image" alt="Image" title="Image"> 
+                </div>
+            </div>
+            <div class="lp__banner_img_overlay_v4 col-lg-10 col-md-9 col-sm-12 col-xs-12">
+                <h1 class="lp__banner_title">The World Bank In China </h1>
+                <p class="lp__banner_description">China has had a remarkable period of rapid growth shifting from a centrally planned to a market based economy. Today, China is an upper middle-income country that has complex development needs, where Bank continues to play an important development role.</p>
+            </div>  
+        </div>   
+    </div>
+</div>
+</div>
+
+</div>
+
+<div class="container">
+<div class="row">
+<div class="col-md-12 col-xs-12">
+    <section class="loop-code-tabs">
+<tab>
+    <tab-nav>
+            <div class="lp__wrapper">
+                    <ul class="tab_list">
+                        <li><a class="lp__tab_active lp__text_center">DEVELOPER GUIDELINES</a></li>
+                        <li><a class="lp__text_center">DESIGNER GUIDELINES</a></li>  
+                        <li><a class="lp__text_center">EXAMPLE</a></li>  
+                    </ul>
+            </div>
+    </tab-nav>
+    <tab-content>
+            <ul class="tab_content_list">
+                <li class="tab_active">
+                    <div class="loop-accordion-content">
+                       
+<pre><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>lp__banner_landing_v4<span class="token punctuation">"</span></span><span class="token punctuation">></span></span> 
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>lp__banner_img_v4<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>lp__banner_bg_img<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>img-responsive cover_image hidden-sm hidden-xs<span class="token punctuation">"</span></span> <span class="token attr-name">alt</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Image<span class="token punctuation">"</span></span> <span class="token attr-name">title</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Image<span class="token punctuation">"</span></span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>../assets/img/fullwidth-7.jpg<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>img-gradient<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>container banner-container<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>  
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>row<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>col-lg-2 col-md-3 col-sm-12 col-xs-12<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>circular_shape<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+                    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>../assets/img/country-hero.png<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>lp__img_responsive cover_image<span class="token punctuation">"</span></span> <span class="token attr-name">alt</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Image<span class="token punctuation">"</span></span> <span class="token attr-name">title</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Image<span class="token punctuation">"</span></span><span class="token punctuation">></span></span> 
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>lp__banner_img_overlay_v4 col-lg-10 col-md-9 col-sm-12 col-xs-12<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>lp__banner_title<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>The World Bank In China <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">></span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>lp__banner_description<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>China has had a remarkable period of rapid growth shifting from a centrally planned to a market based economy. Today, China is an upper middle-income country that has complex development needs, where Bank continues to play an important development role.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>   
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>   
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span></code></pre>
+
+
+
+                    </div>
+                </li>
+                <li class="loop-accordion-content">
+                    <h6>Use:</h6>
+                    <p>Primarily on Topic, Region, and Country pages. This banner is meant to take up little space so that content takes visual priority, while still providing a space for unique, static imagery so users can quickly differentiate the page from others that are built on the same template.</p>
+                    <br>
+                    <h6>Don't use:</h6>
+                    <p>On Topic, News Content, Landing Pages, or any other pages that are consistently employ any other specific Banner style.</p>
+                    <br>
+                    <h6>Visual Style:</h6>
+                    <p>This banner is made up of a blurred background image, a circular primary image, a title, and some descriptive text. It is generally overlapped at the top by the Breadcrumb Navigation and language options if applicable, and at the bottom left by a tabbed sub navigation.</p>
+                    <br>
+                    <h6>Editorial:</h6>
+                    <p>Descriptive text should provide contextualizing information for the page in either the form of a short description, or a meaningful goal or accomplishment.</p>
+                    <br>
+                    <h6>Responsiveness:</h6>
+                    <p>On mobile devices the blurred background image will be replaced by a dark grey background (#28282828), and the circular image, title, and descriptive text will move into a vertical, center aligned configuration.</p>
+                </li>
+                <li class="loop-accordion-content">
+                    <a href="http://www.worldbank.org/en/country/china">The World Bank in China:</a>
+                </li>
+            </ul>
+    </tab-content>
+</tab>
+</section>
+</div>
+</div>
+</div> --> 
+   <div style="padding:16px 0px 32px 0px;"> 
+    <div class="container" style=""> 
+     <h6>Banner v5</h6> 
+    </div> 
+    <div class="loop-preview " style=""> 
+     <div class="lp__banner_landing lp__banner_v5" style=""> 
+      <div class="lp__banner_fullwidth" style=""> 
+       <div class="lp__banner_img" style=""> 
+        <img src="content/dam/loop/assets/img/fullwidth-3.jpg" class="lp__img_responsive cover_image" alt="image" title="image"> 
+        <span class="img-gradient"></span> 
+       </div> 
+       <div class="container banner-container" style=""> 
+        <div class="row" style=""> 
+         <div class="lp__banner_img_overlay_v1 col-xl-10 col-lg-10 col-md-12 col-sm-12 col-xs-12" style=""> 
+          <h1 class="lp__banner_title">consectetuer adipiscing elit.</h1> 
+          <p class="lp__banner_description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p> 
+          <div class="lp__btn_group_horizontal" style=""> 
+           <a href="banner.html#" class="lp__btn lp__btn_sm lp__btn_primary">Read More</a> 
+           <a href="banner.html#" class="lp__btn lp__btn_sm lp__btn_secondary_orange">Learn More</a> 
+          </div> 
+         </div> 
+        </div> 
+       </div> 
+      </div> 
+      <p></p>
+     </div> 
+    </div>
+    <p></p> 
+    <p></p>
+   </div>
+   <p></p> 
+   <div class="container" style=""> 
+    <div class="row" style=""> 
+     <div class="col-md-12 col-xs-12" style=""> 
+      <section class="loop-code-tabs"> 
+       <tab> 
+        <tab-nav> 
+         <div class="lp__wrapper" style=""> 
+          <ul class="tab_list"> 
+           <li><a class="lp__tab_active lp__text_center">DEVELOPER GUIDELINES</a></li> 
+           <li><a class="lp__text_center">DESIGNER GUIDELINES</a></li> 
+           <li><a class="lp__text_center">EXAMPLE</a></li> 
+          </ul> 
+         </div> 
+        </tab-nav> 
+        <tab-content> 
+         <ul class="tab_content_list"> 
+          <li class="tab_active"> 
+           <div class="loop-accordion-content" style=""> 
+            <pre><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>lp__banner_landing lp__banner_v5<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>  
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>lp__banner_fullwidth<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>lp__banner_img<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>../assets/img/fullwidth-3.jpg<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>lp__img_responsive cover_image<span class="token punctuation">"</span></span> <span class="token attr-name">alt</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>image<span class="token punctuation">"</span></span> <span class="token attr-name">title</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>image<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>img-gradient<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>  
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>container banner-container<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>  
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>row<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>lp__banner_img_overlay_v1 col-xl-10 col-lg-10 col-md-12 col-sm-12 col-xs-12<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>lp__banner_title<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>consectetuer adipiscing elit.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>lp__banner_description<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>lp__btn_group_horizontal<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>lp__btn lp__btn_sm lp__btn_primary<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Read More<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span> 
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>lp__btn lp__btn_sm lp__btn_secondary_orange<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Learn More<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span> 
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>   
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre> 
+           </div> </li> 
+          <li class="loop-accordion-content"> <h6>Use:</h6> <p>Much like Banner v2, on pages that benefit from a striking, unique visual identity. This is primarily used for campaign pages.</p> <br> <h6>Don't use:</h6> <p>On Country, Region, Topic, News Content pages, or any pages that are consistently employ any other specific Banner style.</p> <br> <h6>Visual Style:</h6> <p>The <a href="buttons.html">Buttons</a> on this banner variation must be horizontally aligned. The color and pattern of the banner image should be considered when choosing button color variation so that the buttons have appropriate contrast and are easily visible.</p> <br> <h6>Behavior:</h6> <p>The banner should be completely static with the exception of the button hover states outlined in the <a href="buttons.html">Buttons</a> section.</p> <br> <h6>Editorial:</h6> <p>Description text for this banner should offer an impactful summary of the content and goals of the page. For reference look at any top-level page in the WB site, the banner image and the description work together to humanize the content of the page by using intimate imagery and almost conversational introductory text (e.g. <a href="http://www.worldbank.org/en/understanding-poverty"> Understanding Poverty</a>). The description should be kept reasonably brief, generally no longer than two sentences or three lines of text at full screen.</p> <h6>Responsiveness:</h6> <p>On mobile devices the text and buttons will move from the banner image to a sub-banner with a white background so that the primary subject of the banner is not obscured.</p> </li> 
+          <li class="loop-accordion-content"> <a href="https://www.worldbank.org/en/who-we-are/news/campaigns/2017/endpoverty">End Poverty:</a> </li> 
+         </ul> 
+        </tab-content> 
+       </tab> 
+      </section> 
+     </div> 
+     <p></p>
+    </div> 
+   </div>
+   <p></p> 
+   <p></p>
+  </div>
+  <p></p> 
+  <footer class="loop-site-footer" role="contentinfo"> 
+   <div class="loop-site-footer-info" style=""> 
+    <div class="container" style=""> 
+     <div class="row" style=""> 
+      <div class="col-xl-10" style=""> 
+       <div class="loop-copyright" style="">
+         © 
+        <script language="JavaScript">
+						<!-- Begin
+						var time=new Date();
+						var year=time.getYear();
+						if (year < 2000)
+						year = year + 1900;
+						document.write(year);// End --></script> The World Bank Group, All Rights Reserved. 
+        <!-- <p>Copyright © 2017 World Bank Group.  All rights reserved. Version 1.0.0 latest update on June 27th 2017.</p> -->
+       </div> 
+      </div>
+      <!-- End left column --> 
+      <div class="col-xl-2" style=""> 
+       <div class="loop-contactus" style="">
+        <a href="contacts.html">CONTACT US</a>
+       </div> 
+      </div>
+      <!-- End left column --> 
+     </div> 
+    </div> 
+   </div> 
+  </footer> 
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script> 
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> 
+  <script type="text/javascript" src="http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script> 
+  <script src="content/dam/loop/assets/js/styleguide.js"></script> 
+  <script type="text/javascript">
+ $(document).on('ready', function() {
+      $('.slide_1').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: true,
+        autoplay: true,
+          speed: 1000,
+        arrows: false,
+      });
+});
+
+ $(document).on('ready', function() {
+      $('.slide_4').slick({
+        infinite: false,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        adaptiveHeight: false,
+        dots: false,
+        responsive: [
+          {
+            breakpoint: 1200,
+            settings: {
+              slidesToShow: 3
+            }
+          },
+          {
+            breakpoint: 992,
+            settings: {
+              slidesToShow: 2,
+            }
+          },
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 2,
+              
+            }
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 1,
+              adaptiveHeight: true
+            }
+          }
+        ]
+      });
+});
+
+if ($(window).width() > 768) {
+function equalHeight(group) {
+    tallest = 0;
+    group.each(function() {
+        thisHeight = $(this).height();
+        if(thisHeight > tallest) {
+            tallest = thisHeight;
+        }
+    });
+    group.height(tallest);
+}
+ 
+$(document).ready(function(){
+    equalHeight($(".icon-list-thumb"));
+});
+}
+
+$("#dropdown-tab li a").click(function(e){
+        $(this).closest(".open").find(".filter-option").text($(this).text());
+        var cIndex = $( "#dropdown-tab li a" ).index(this);
+
+        $(".dropdown-tabshow").each(function(){
+            $(this).hide();
+        });
+        $(".dropdown-tabindex"+cIndex).show();
+        $(".dropdown-tabindex"+cIndex).css("visibility", "visible");
+        $(".dropdown-tabindex"+cIndex).css("height", "auto");
+        $(".dropdown-tabindex"+cIndex).css("opacity", "1");
+     
+    });
+
+    // begin Left Nav toggle
+  function toggleclass(element,elemMore){ 
+    $(element).toggle();      
+    if($(element).is(":visible")){
+      $(elemMore).html('<i class="loop loop-angle-up"></i>');
+    }else{
+      $(elemMore).html('<i class="loop loop-angle-down"></i>');
+    }
+  }
+// end Left Nav toggle
+  </script> 
+  <script src="content/dam/loop/assets/js/vendor/loop.js"></script>   
+ </body>
+</html>
+
+

@@ -1,0 +1,1012 @@
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en">
+ <!--<![endif]-->
+ <head> 
+  <!-- Basic Page Needs
+================================================== --> 
+  <meta charset="utf-8"> 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+  <!-- Mobile Specific Metas
+================================================== --> 
+  <meta name="HandheldFriendly" content="True"> 
+  <meta name="MobileOptimized" content="320"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <!-- Title and meta description
+================================================== --> 
+  <title> colors</title> 
+  <meta property="og:title" content="The Loop Design System Documentation | colors"> 
+  <meta name="description" content=""> 
+  <meta property="og:description" content=""> 
+  <link rel="canonical" href="http://localhost:4444/colors/"> 
+  <!--[if lt IE 9]>
+  <script src="/assets/js/vendor/html5shiv.js"></script>
+<![endif]--> 
+  <!-- Favicons
+================================================== --> 
+  <!-- 128x128 --> 
+  <link rel="shortcut icon" type="image/ico" href="content/dam/loop/assets/img/favicon.ico@cache=no"> 
+  <link rel="icon" type="image/png" href="content/dam/loop/assets/img/favicon.png@cache=no"> 
+  <!-- 192x192, as recommended for Android
+  http://updates.html5rocks.com/2014/11/Support-for-theme-color-in-Chrome-39-for-Android
+  --> 
+  <link rel="icon" type="image/png" sizes="192x192" href="content/dam/loop/assets/img/favicon.png@cache=no"> 
+  <!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices --> 
+  <link rel="apple-touch-icon-precomposed" href="content/dam/loop/assets/img/favicon.png@cache=no"> 
+  <!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini --> 
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="content/dam/loop/assets/img/favicon.png@cache=no"> 
+  <!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch --> 
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="content/dam/loop/assets/img/favicon.png@cache=no"> 
+  <!-- 144x144 (precomposed) for iPad 3rd and 4th generation --> 
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="content/dam/loop/assets/img/favicon.png@cache=no"> 
+  <!-- CSS
+================================================== --> 
+  <link rel="stylesheet" href="content/dam/loop/assets/css/styleguide.css@cache=no.css"> 
+ </head> 
+ <body class="page-colors"> 
+  <header class="loop-site-header" role="banner" id="main"> 
+   <div class="container" style=""> 
+    <button class="loop-menu-btn">Menu</button> 
+    <div class="loop-site-header-navbar" id="logo" style=""> 
+     <a href="index.html" class="loop-site-header-brand" title="Home" aria-label="Home"><img src="content/dam/loop/assets/img/loop-logo.png" alt="Logo" title="Logo"></a> 
+    </div> 
+    <ul class="loop-download-btn-top hidden-md hidden-sm hidden-xs"> 
+     <li> <a class="lp__btn lp__btn_xs lp__btn_primary_inverse" href="getting-started.html" onclick="ga('send', 'event', 'Clicked View how to install or work design system');"> GET STARTED </a> </li> 
+     <!-- <li>
+    <a class="lp__btn lp__btn_xs lp__btn_primary_inverse" href="/files/loop-1.0.0.zip" onclick="ga('send', 'event', 'Download', 'Clicked Clicked Download code and design files from inside site');">
+      DOWNLOAD
+    </a>
+    
+  </li>--> 
+    </ul> 
+    <nav class="loop-site-nav-secondary"> 
+     <ul> 
+      <li> <a href="getting-started.html">GETTING STARTED</a> </li> 
+      <li> <a class="loop-current" href="colors.html">VISUAL STYLE</a> </li> 
+      <li> <a href="components.html">COMPONENTS</a> </li> 
+      <!-- <li>
+        <a  href="/overview/">PAGE LAYOUTS</a>
+      </li> --> 
+      <li> <a href="practices.html">PRACTICES</a> </li>  
+      <li> <a href="header-footer.html">HEADER FOOTER</a> </li> 
+      <li> <a href="release-history.html">RELEASE HISTORY</a> </li> 
+     </ul> 
+    </nav> 
+   </div> 
+  </header> 
+  <div class="loop-overlay" style=""></div> 
+  <nav role="navigation" class="loop-nav sidenav-mobile"> 
+   <div class="loop-nav-inner" style=""> 
+    <button class="loop-nav-close"> <img src="content/dam/loop/assets/img/close.svg" alt="close"> </button> 
+    <ul class="loop-sidenav-list usa-accordion"> 
+     <li> <button class="usa-accordion-button" aria-expanded="false" aria-controls="side-nav-1">GETTING STARTED</button> 
+      <ul id="side-nav-1" class="loop-sidenav-sub_list"> 
+       <li> <a href="getting-started.html">Overview</a> </li> 
+      </ul> </li> 
+     <li> <button class="loop-current" aria-expanded="true" aria-controls="side-nav-2">VISUAL STYLE</button> 
+      <ul id="side-nav-2" class="loop-sidenav-sub_list"> 
+       <li> <a class="loop-current" href="colors.html">Colors</a> </li> 
+       <li><a href="grid.html">Grid</a></li> 
+       <li> <a href="font-icon.html">Icons</a> </li> 
+       <li> <a href="images.html">Images</a> </li> 
+       <li> <a href="http://theloop.worldbank.org/logos">Logos</a> </li> 
+       <li> <a href="space.html">Space</a> </li> 
+       <li> <a href="typography.html">Typography</a> </li> 
+      </ul> </li>
+     <!-- End visual Style --> 
+     <li> <button class="usa-accordion-button" aria-expanded="false" aria-controls="side-nav-3">COMPONENTS</button> 
+      <ul id="side-nav-3" class="loop-sidenav-sub_list"> 
+       <li> <a href="components.html">Overview</a> </li> 
+       <li><a href="accordions.html">Accordions</a></li> 
+       <li><a href="alerts.html">Alert</a></li> 
+       <li><a href="badges.html">Badges</a></li> 
+       <li><a href="banner.html">Banner</a></li> 
+       <li><a href="body-content.html">Body Content</a></li> 
+       <li><a href="buttons.html">Buttons</a> </li> 
+       <li><a href="breadcrumb.html">Breadcrumb</a></li> 
+       <li><a href="card.html">Card</a> </li> 
+       <li><a href="carousel.html">Carousel</a></li> 
+       <li><a href="checkbox.html">Checkbox</a></li> 
+       <li><a href="contact-us.html">Contact us</a></li> 
+       <li><a href="datepicker.html">Date picker</a></li> 
+       <li><a href="dropdown.html">Dropdown</a></li> 
+       <li><a href="email-sign-up.html">Email sign-up</a></li> 
+       <li><a href="experts.html">Experts</a></li> 
+       <li><a href="forms.html">Forms</a></li> 
+       <li><a href="header-footer.html">Header &amp; Footer</a></li> 
+       <li><a href="latest-list.html">Latest List</a></li> 
+       <li><a href="left-nav.html">Left navigation</a></li> 
+       <li><a href="link.html">Link List</a></li> 
+       <li><a href="list-navigation.html">List Navigation</a></li> 
+       <li><a href="modals.html">Modals</a></li> 
+       <li><a href="multimedia.html"> Multimedia</a></li> 
+       <li><a href="pagination.html"> Pagination</a></li> 
+       <li><a href="progress-bars.html"> Progress Bars</a></li> 
+       <li><a href="pullquote.html">Pullquote</a></li> 
+       <li><a href="radio.html">Radio Button</a></li> 
+       <li><a href="search_inputs_fields.html">Search Bars</a> </li> 
+       <li><a href="stay-connected.html">Stay Connected</a></li> 
+       <li><a href="synopsis.html">Synopsis</a></li> 
+       <li><a href="table.html">Table</a></li> 
+       <li><a href="tabs.html">Tabs</a></li> 
+       <li> <a href="inputs_fields.html">Text Inputs</a> </li> 
+       <li><a href="tooltips.html">Tooltips</a></li> 
+      </ul> </li>
+     <!-- End Components --> 
+     <!-- <li>
+        <button class="usa-accordion-button"
+          
+          
+            aria-expanded="false"
+          
+          aria-controls="side-nav-4">PAGE LAYOUTS</button>
+        <ul id="side-nav-4" class="loop-sidenav-sub_list">
+    <li>
+      <a  href="/overview/">Home page</a>
+    </li>
+        <li>
+      <a  href="/landing-page/">Landing Pages</a>
+    </li>
+        <li>
+      <a  href="/country/">Country</a>
+    </li>
+        <li>
+      <a  href="/topic/">Topics</a>
+    </li>
+   <li>
+      <a  href="/content-type/">News Content Type</a>
+    </li>
+
+        </ul>
+      </li>End Examples --> 
+     <li> <button class="usa-accordion-button" aria-expanded="false" aria-controls="side-nav-5">PRACTICES</button> 
+      <ul id="side-nav-5" class="loop-sidenav-sub_list"> 
+       <li> <a href="practices.html">Accessibility</a> </li> 
+      </ul> </li>
+     <!-- End Practicies --> 
+     <li> <button class="usa-accordion-button" aria-expanded="false" aria-controls="side-nav-6">RELEASE HISTORY</button> 
+      <ul id="side-nav-6" class="loop-sidenav-sub_list"> 
+       <li> <a href="release-history.html">Overview</a> </li> 
+      </ul> </li>
+     <!-- End Practicies --> 
+    </ul> 
+   </div> 
+  </nav> 
+  <section class="styleguide-top-content dark-blue"> 
+   <div class="container" style=""> 
+    <h1 class="loop-section-category">Visual Style</h1> 
+   </div>
+  </section> 
+  <main class="loop-main-content" id="main-content"> 
+   <div class="container" style=""> 
+    <div class="row" style=""> 
+     <div class="col-xl-2 col-lg-2 col-md-3 col-sm-12 col-xs-12 hidden-sm hidden-md hidden-xs" style=""> 
+      <aside class="loop-sidenav"> 
+       <nav> 
+        <ul class="loop-sidenav-list"> 
+         <li> <a class="loop-current" href="colors.html">Colors</a> </li> 
+         <li><a href="grid.html">Grid</a></li> 
+         <li> <a href="font-icon.html">Icons</a> </li> 
+         <li> <a href="images.html">Images</a> </li> 
+         <!-- <li>
+      <a  href="/logos/">Logos</a>
+    </li> --> 
+         <li> <a href="space.html">Space</a> </li> 
+         <li> <a href="typography.html">Typography</a> </li> 
+        </ul> 
+       </nav> 
+      </aside> 
+     </div> 
+     <div class="col-xl-10 col-lg-10 col-md-12 col-sm-12 col-xs-12" style=""> 
+      <div class="styleguide-content loop-content" style=""> 
+       <h3 class="loop-section-title">Color</h3> 
+       <div class="lp__lead_paragraph_md" style="">
+        Color follows the brand guidelines of The World Bank. Additional colors were created for the digital platform and accessibility.
+       </div> 
+       <p></p>
+       <hr> 
+       <div class="row" style=""> 
+        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12" style=""> 
+         <h4>World Bank Brand</h4> 
+         <div class="world-bank-brand" style=""> 
+          <ul class="row"> 
+           <li class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12 mrg-b-32"> 
+            <div class="color-thumb bg-blue-13" style=""></div> 
+            <div class="color-content" style=""> 
+             <span class="color-variable">$lp-color-blue-13; #002244;</span> 
+             <p class="color-blurb">brand dark blue used only in main navigation and WB logo, may also be used in some charts and graphs</p> 
+            </div> </li> 
+           <li class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12 mrg-b-32"> 
+            <div class="color-thumb bg-blue-61" style=""></div> 
+            <div class="color-content" style=""> 
+             <span class="color-variable">$lp-color-blue-61; #009FDA;</span> 
+             <p class="color-blurb">brand blue used sparingly in graphs, charts, main navigation and can be used as a background in rows</p> 
+            </div> </li> 
+           <li class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12 mrg-b-32"> 
+            <div class="color-thumb bg-gray-100" style=""></div> 
+            <div class="color-content" style=""> 
+             <span class="color-variable">$lp-color-neutral-100; #ffffff;</span> 
+             <p class="color-blurb">white used in backgrounds, text/links on dark/color backgrounds, button background</p> 
+            </div> </li> 
+           <li class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12 mrg-b-32"> 
+            <div class="color-thumb bg-gray-0" style=""></div> 
+            <div class="color-content" style=""> 
+             <span class="color-variable">$lp-color-neutral-0; #000000;</span> 
+             <p class="color-blurb"></p> 
+            </div> </li> 
+          </ul> 
+         </div> 
+        </div> 
+       </div> 
+       <hr> 
+       <div class="world-bank-brand color-table" style=""> 
+        <h4>Container Backgrounds</h4> 
+        <p class="h6">Grayscale</p> 
+        <table> 
+         <thead> 
+          <tr> 
+           <th class="lp__lead_paragraph_xs lp__text_uppercase">Backgrounds color</th> 
+           <th class="lp__lead_paragraph_xs lp__text_uppercase">#ffffff</th> 
+           <th class="lp__lead_paragraph_xs lp__text_uppercase">#fafafa</th> 
+           <th class="lp__lead_paragraph_xs lp__text_uppercase">#F2F2F2</th> 
+           <th class="lp__lead_paragraph_xs lp__text_uppercase">#e6e6e6</th> 
+           <th class="lp__lead_paragraph_xs lp__text_uppercase">#CCCCCC</th> 
+           <th class="lp__lead_paragraph_xs lp__text_uppercase">#666666</th> 
+           <th class="lp__lead_paragraph_xs lp__text_uppercase">#4D4D4D</th> 
+           <th class="lp__lead_paragraph_xs lp__text_uppercase">#262626</th> 
+           <th class="lp__lead_paragraph_xs lp__text_uppercase">#1A1A1A</th> 
+           <th class="lp__lead_paragraph_xs lp__text_uppercase">#000000</th> 
+           <th class="lp__lead_paragraph_xs lp__text_uppercase">#0071bc</th> 
+          </tr> 
+         </thead> 
+         <tbody> 
+          <tr> 
+           <td>
+            <div class="color-thumb bg-gray-0" style=""></div> 
+            <div class="color-content" style=""> 
+             <span class="color-variable">$lp-color-neutral-0: #000000;</span> 
+            </div></td> 
+           <td><span class="color-thumb-md bg-gray-0 "><span class="color-text-lg text-gray-100">Aa</span></span></td> 
+           <td><span class="color-thumb-md bg-gray-0 "><span class="color-text-lg text-gray-98">Aa</span></span></td> 
+           <td><span class="color-thumb-md bg-gray-0 "><span class="color-text-lg text-gray-95">Aa</span></span></td> 
+           <td><span class="color-thumb-md bg-gray-0 "><span class="color-text-lg text-gray-91">Aa</span></span></td> 
+           <td><span class="color-thumb-md bg-gray-0 "><span class="color-text-lg text-gray-82">Aa</span></span></td> 
+           <td><span class="color-thumb-md bg-gray-91 color-text-lg text-gray-98"><span class="">NA</span></span></td> 
+           <td><span class="color-thumb-md bg-gray-91 color-text-lg text-gray-98"><span class="">NA</span></span></td> 
+           <td><span class="color-thumb-md bg-gray-91 color-text-lg text-gray-98"><span class="">NA</span></span></td> 
+           <td><span class="color-thumb-md bg-gray-91 color-text-lg text-gray-98"><span class="">NA</span></span></td> 
+           <td><span class="color-thumb-md bg-gray-91 color-text-lg text-gray-98"><span class="">NA</span></span></td> 
+           <td><span class="color-thumb-md bg-gray-91 color-text-lg text-gray-98"><span class="">NA</span></span></td> 
+          </tr> 
+          <tr> 
+           <td>
+            <div class="color-thumb bg-gray-9" style=""></div> 
+            <div class="color-content" style=""> 
+             <span class="color-variable">$lp-color-neutral-9: #1A1A1A;</span> 
+            </div></td> 
+           <td><span class="color-thumb-md bg-gray-9 "><span class="color-text-lg text-gray-100">Aa</span></span></td> 
+           <td><span class="color-thumb-md bg-gray-9 "><span class="color-text-lg text-gray-98">Aa</span></span></td> 
+           <td><span class="color-thumb-md bg-gray-9 "><span class="color-text-lg text-gray-95">Aa</span></span></td> 
+           <td><span class="color-thumb-md bg-gray-9 "><span class="color-text-lg text-gray-91">Aa</span></span></td> 
+           <td><span class="color-thumb-md bg-gray-9 "><span class="color-text-lg text-gray-82">Aa</span></span></td> 
+           <td><span class="color-thumb-md bg-gray-91 color-text-lg text-gray-98"><span class="">NA</span></span></td> 
+           <td><span class="color-thumb-md bg-gray-91 color-text-lg text-gray-98"><span class="">NA</span></span></td> 
+           <td><span class="color-thumb-md bg-gray-91 color-text-lg text-gray-98"><span class="">NA</span></span></td> 
+           <td><span class="color-thumb-md bg-gray-91 color-text-lg text-gray-98"><span class="">NA</span></span></td> 
+           <td><span class="color-thumb-md bg-gray-91 color-text-lg text-gray-98"><span class="">NA</span></span></td> 
+           <td><span class="color-thumb-md bg-gray-91 color-text-lg text-gray-98"><span class="">NA</span></span></td> 
+          </tr> 
+          <tr> 
+           <td>
+            <div class="color-thumb bg-gray-15" style=""></div> 
+            <div class="color-content" style=""> 
+             <span class="color-variable">$lp-color-neutral-15: #262626;</span> 
+            </div></td> 
+           <td><span class="color-thumb-md bg-gray-15 "><span class="color-text-lg text-gray-100">Aa</span></span></td> 
+           <td><span class="color-thumb-md bg-gray-15 "><span class="color-text-lg text-gray-98">Aa</span></span></td> 
+           <td><span class="color-thumb-md bg-gray-15 "><span class="color-text-lg text-gray-95">Aa</span></span></td> 
+           <td><span class="color-thumb-md bg-gray-15 "><span class="color-text-lg text-gray-91">Aa</span></span></td> 
+           <td><span class="color-thumb-md bg-gray-15 "><span class="color-text-lg text-gray-82">Aa</span></span></td> 
+           <td><span class="color-thumb-md bg-gray-91 color-text-lg text-gray-98"><span class="">NA</span></span></td> 
+           <td><span class="color-thumb-md bg-gray-91 color-text-lg text-gray-98"><span class="">NA</span></span></td> 
+           <td><span class="color-thumb-md bg-gray-91 color-text-lg text-gray-98"><span class="">NA</span></span></td> 
+           <td><span class="color-thumb-md bg-gray-91 color-text-lg text-gray-98"><span class="">NA</span></span></td> 
+           <td><span class="color-thumb-md bg-gray-91 color-text-lg text-gray-98"><span class="">NA</span></span></td> 
+           <td><span class="color-thumb-md bg-gray-91 color-text-lg text-gray-98"><span class="">NA</span></span></td> 
+          </tr> 
+          <tr> 
+           <td>
+            <div class="color-thumb bg-gray-33" style=""></div> 
+            <div class="color-content" style=""> 
+             <span class="color-variable">$lp-color-neutral-33: #4D4D4D;</span> 
+            </div></td> 
+           <td><span class="color-thumb-md bg-gray-33 "><span class="color-text-lg text-gray-100">Aa</span></span></td> 
+           <td><span class="color-thumb-md bg-gray-33 "><span class="color-text-lg text-gray-98">Aa</span></span></td> 
+           <td><span class="color-thumb-md bg-gray-33 "><span class="color-text-lg text-gray-95">Aa</span></span></td> 
+           <td><span class="color-thumb-md bg-gray-33 "><span class="color-text-lg text-gray-91">Aa</span></span></td> 
+           <td><span class="color-thumb-md bg-gray-33 "><span class="color-text-lg text-gray-82">Aa</span></span></td> 
+           <td><span class="color-thumb-md bg-gray-91 color-text-lg text-gray-98"><span class="">NA</span></span></td> 
+           <td><span class="color-thumb-md bg-gray-91 color-text-lg text-gray-98"><span class="">NA</span></span></td> 
+           <td><span class="color-thumb-md bg-gray-91 color-text-lg text-gray-98"><span class="">NA</span></span></td> 
+           <td><span class="color-thumb-md bg-gray-91 color-text-lg text-gray-98"><span class="">NA</span></span></td> 
+           <td><span class="color-thumb-md bg-gray-91 color-text-lg text-gray-98"><span class="">NA</span></span></td> 
+           <td><span class="color-thumb-md bg-gray-91 color-text-lg text-gray-98"><span class="">NA</span></span></td> 
+          </tr> 
+          <tr> 
+           <td>
+            <div class="color-thumb bg-gray-43" style=""></div> 
+            <div class="color-content" style=""> 
+             <span class="color-variable">$lp-color-neutral-43: #666666;</span> 
+            </div></td> 
+           <td><span class="color-thumb-md bg-gray-43 "><span class="color-text-lg text-gray-100">Aa</span></span></td> 
+           <td><span class="color-thumb-md bg-gray-43 "><span class="color-text-lg text-gray-98">Aa</span></span></td> 
+           <td><span class="color-thumb-md bg-gray-43 "><span class="color-text-lg text-gray-95">Aa</span></span></td> 
+           <td><span class="color-thumb-md bg-gray-43 "><span class="color-text-lg text-gray-91">Aa</span></span></td> 
+           <td><span class="color-thumb-md bg-gray-91 color-text-lg text-gray-98"><span class="">NA</span></span></td> 
+           <td><span class="color-thumb-md bg-gray-91 color-text-lg text-gray-98"><span class="">NA</span></span></td> 
+           <td><span class="color-thumb-md bg-gray-91 color-text-lg text-gray-98"><span class="">NA</span></span></td> 
+           <td><span class="color-thumb-md bg-gray-91 color-text-lg text-gray-98"><span class="">NA</span></span></td> 
+           <td><span class="color-thumb-md bg-gray-91 color-text-lg text-gray-98"><span class="">NA</span></span></td> 
+           <td><span class="color-thumb-md bg-gray-91 color-text-lg text-gray-98"><span class="">NA</span></span></td> 
+           <td><span class="color-thumb-md bg-gray-91 color-text-lg text-gray-98"><span class="">NA</span></span></td> 
+          </tr> 
+          <tr> 
+           <td>
+            <div class="color-thumb bg-gray-82" style=""></div> 
+            <div class="color-content" style=""> 
+             <span class="color-variable">$lp-color-neutral-82: #CCCCCC;</span> 
+            </div></td> 
+           <td><span class="color-thumb-md bg-gray-91 color-text-lg text-gray-98"><span class="">NA</span></span></td> 
+           <td><span class="color-thumb-md bg-gray-91 color-text-lg text-gray-98"><span class="">NA</span></span></td> 
+           <td><span class="color-thumb-md bg-gray-91 color-text-lg text-gray-98"><span class="">NA</span></span></td> 
+           <td><span class="color-thumb-md bg-gray-91 color-text-lg text-gray-98"><span class="">NA</span></span></td> 
+           <td><span class="color-thumb-md bg-gray-91 color-text-lg text-gray-98"><span class="">NA</span></span></td> 
+           <td><span class="color-thumb-md bg-gray-91 color-text-lg text-gray-98"><span class="">NA</span></span></td> 
+           <td><span class="color-thumb-md bg-gray-82 "><span class="color-text-lg text-gray-33">Aa</span></span></td> 
+           <td><span class="color-thumb-md bg-gray-82 "><span class="color-text-lg text-gray-15">Aa</span></span></td> 
+           <td><span class="color-thumb-md bg-gray-82 "><span class="color-text-lg text-gray-9">Aa</span></span></td> 
+           <td><span class="color-thumb-md bg-gray-82 "><span class="color-text-lg text-gray-0">Aa</span></span></td> 
+           <td><span class="color-thumb-md bg-gray-91 color-text-lg text-gray-98"><span class="">NA</span></span></td> 
+          </tr> 
+          <tr> 
+           <td>
+            <div class="color-thumb bg-gray-91" style=""></div> 
+            <div class="color-content" style=""> 
+             <span class="color-variable">$lp-color-neutral-91: #e6e6e6;</span> 
+            </div></td> 
+           <td><span class="color-thumb-md bg-gray-91 color-text-lg text-gray-98"><span class="">NA</span></span></td> 
+           <td><span class="color-thumb-md bg-gray-91 color-text-lg text-gray-98"><span class="">NA</span></span></td> 
+           <td><span class="color-thumb-md bg-gray-91 color-text-lg text-gray-98"><span class="">NA</span></span></td> 
+           <td><span class="color-thumb-md bg-gray-91 color-text-lg text-gray-98"><span class="">NA</span></span></td> 
+           <td><span class="color-thumb-md bg-gray-91 color-text-lg text-gray-98"><span class="">NA</span></span></td> 
+           <td><span class="color-thumb-md bg-gray-91 "><span class="color-text-lg text-gray-43">Aa</span></span></td> 
+           <td><span class="color-thumb-md bg-gray-91 "><span class="color-text-lg text-gray-33">Aa</span></span></td> 
+           <td><span class="color-thumb-md bg-gray-91 "><span class="color-text-lg text-gray-15">Aa</span></span></td> 
+           <td><span class="color-thumb-md bg-gray-91 "><span class="color-text-lg text-gray-9">Aa</span></span></td> 
+           <td><span class="color-thumb-md bg-gray-91 "><span class="color-text-lg text-gray-0">Aa</span></span></td> 
+           <td><span class="color-thumb-md bg-gray-91 color-text-lg text-gray-98"><span class="">NA</span></span></td> 
+          </tr> 
+          <tr> 
+           <td>
+            <div class="color-thumb bg-gray-95" style=""></div> 
+            <div class="color-content" style=""> 
+             <span class="color-variable">$lp-color-neutral-95: #F2F2F2;</span> 
+            </div></td> 
+           <td><span class="color-thumb-md bg-gray-91 color-text-lg text-gray-98"><span class="">NA</span></span></td> 
+           <td><span class="color-thumb-md bg-gray-91 color-text-lg text-gray-98"><span class="">NA</span></span></td> 
+           <td><span class="color-thumb-md bg-gray-91 color-text-lg text-gray-98"><span class="">NA</span></span></td> 
+           <td><span class="color-thumb-md bg-gray-91 color-text-lg text-gray-98"><span class="">NA</span></span></td> 
+           <td><span class="color-thumb-md bg-gray-91 color-text-lg text-gray-98"><span class="">NA</span></span></td> 
+           <td><span class="color-thumb-md bg-gray-95 "><span class="color-text-lg text-gray-43">Aa</span></span></td> 
+           <td><span class="color-thumb-md bg-gray-95 "><span class="color-text-lg text-gray-33">Aa</span></span></td> 
+           <td><span class="color-thumb-md bg-gray-95 "><span class="color-text-lg text-gray-15">Aa</span></span></td> 
+           <td><span class="color-thumb-md bg-gray-95 "><span class="color-text-lg text-gray-9">Aa</span></span></td> 
+           <td><span class="color-thumb-md bg-gray-95 "><span class="color-text-lg text-gray-0">Aa</span></span></td> 
+           <td><span class="color-thumb-md bg-gray-95 color-text-lg text-blue-45"><span class="">Aa</span></span></td> 
+          </tr> 
+          <tr> 
+           <td>
+            <div class="color-thumb bg-gray-98" style=""></div> 
+            <div class="color-content" style=""> 
+             <span class="color-variable">$lp-color-neutral-98: #fafafa;</span> 
+            </div></td> 
+           <td><span class="color-thumb-md bg-gray-91 color-text-lg text-gray-98"><span class="">NA</span></span></td> 
+           <td><span class="color-thumb-md bg-gray-91 color-text-lg text-gray-98"><span class="">NA</span></span></td> 
+           <td><span class="color-thumb-md bg-gray-91 color-text-lg text-gray-98"><span class="">NA</span></span></td> 
+           <td><span class="color-thumb-md bg-gray-91 color-text-lg text-gray-98"><span class="">NA</span></span></td> 
+           <td><span class="color-thumb-md bg-gray-91 color-text-lg text-gray-98"><span class="">NA</span></span></td> 
+           <td><span class="color-thumb-md bg-gray-98 "><span class="color-text-lg text-gray-43">Aa</span></span></td> 
+           <td><span class="color-thumb-md bg-gray-98 "><span class="color-text-lg text-gray-33">Aa</span></span></td> 
+           <td><span class="color-thumb-md bg-gray-98 "><span class="color-text-lg text-gray-15">Aa</span></span></td> 
+           <td><span class="color-thumb-md bg-gray-98 "><span class="color-text-lg text-gray-9">Aa</span></span></td> 
+           <td><span class="color-thumb-md bg-gray-98 "><span class="color-text-lg text-gray-0">Aa</span></span></td> 
+           <td><span class="color-thumb-md bg-gray-98 color-text-lg text-blue-45"><span class="">Aa</span></span></td> 
+          </tr> 
+          <tr> 
+           <td>
+            <div class="color-thumb bg-gray-100" style=""></div> 
+            <div class="color-content" style=""> 
+             <span class="color-variable">$lp-color-neutral-100: #ffffff;</span> 
+            </div></td> 
+           <td><span class="color-thumb-md bg-gray-91 color-text-lg text-gray-98"><span class="">NA</span></span></td> 
+           <td><span class="color-thumb-md bg-gray-91 color-text-lg text-gray-98"><span class="">NA</span></span></td> 
+           <td><span class="color-thumb-md bg-gray-91 color-text-lg text-gray-98"><span class="">NA</span></span></td> 
+           <td><span class="color-thumb-md bg-gray-91 color-text-lg text-gray-98"><span class="">NA</span></span></td> 
+           <td><span class="color-thumb-md bg-gray-91 color-text-lg text-gray-98"><span class="">NA</span></span></td> 
+           <td><span class="color-thumb-md bg-gray-100 "><span class="color-text-lg text-gray-43">Aa</span></span></td> 
+           <td><span class="color-thumb-md bg-gray-100 "><span class="color-text-lg text-gray-33">Aa</span></span></td> 
+           <td><span class="color-thumb-md bg-gray-100 "><span class="color-text-lg text-gray-15">Aa</span></span></td> 
+           <td><span class="color-thumb-md bg-gray-100 "><span class="color-text-lg text-gray-9">Aa</span></span></td> 
+           <td><span class="color-thumb-md bg-gray-100 "><span class="color-text-lg text-gray-0">Aa</span></span></td> 
+           <td><span class="color-thumb-md bg-gray-100 "><span class="color-text-lg text-blue-45">Aa</span></span></td> 
+          </tr> 
+         </tbody> 
+        </table> 
+       </div> 
+       <div class="world-bank-brand color-table" style=""> 
+        <p class="h6">Accent Blue</p> 
+        <table> 
+         <thead> 
+          <tr> 
+           <th class="lp__lead_paragraph_xs lp__text_uppercase">Backgrounds color</th> 
+           <th class="lp__lead_paragraph_xs lp__text_uppercase">#ffffff</th> 
+           <th class="lp__lead_paragraph_xs lp__text_uppercase">#F6FCFF</th> 
+           <th class="lp__lead_paragraph_xs lp__text_uppercase">#E9F7FD</th> 
+           <th class="lp__lead_paragraph_xs lp__text_uppercase">#CDE7F9</th> 
+           <th class="lp__lead_paragraph_xs lp__text_uppercase">#A3DAFF</th> 
+           <th class="lp__lead_paragraph_xs lp__text_uppercase">#0071bc</th> 
+           <th class="lp__lead_paragraph_xs lp__text_uppercase">#00538A</th> 
+           <th class="lp__lead_paragraph_xs lp__text_uppercase">#004370</th> 
+           <th class="lp__lead_paragraph_xs lp__text_uppercase">#053657</th> 
+          </tr> 
+         </thead> 
+         <tbody> 
+          <tr> 
+           <td>
+            <div class="color-thumb bg-blue-21" style=""></div> 
+            <div class="color-content" style=""> 
+             <span class="color-variable">$lp-color-blue-21: #053657;</span> 
+            </div></td> 
+           <td><span class="color-thumb-md bg-blue-21 "><span class="color-text-lg text-gray-100">Aa</span></span></td> 
+           <td><span class="color-thumb-md bg-blue-21 "><span class="color-text-lg text-blue-99">Aa</span></span></td> 
+           <td><span class="color-thumb-md bg-blue-21 "><span class="color-text-lg text-blue-96">Aa</span></span></td> 
+           <td><span class="color-thumb-md bg-blue-21 "><span class="color-text-lg text-blue-90">Aa</span></span></td> 
+           <td><span class="color-thumb-md bg-blue-21 "><span class="color-text-lg text-blue-84">Aa</span></span></td> 
+           <td><span class="color-thumb-md bg-gray-91 color-text-lg text-gray-98"><span class="">NA</span></span></td> 
+           <td><span class="color-thumb-md bg-gray-91 color-text-lg text-gray-98"><span class="">NA</span></span></td> 
+           <td><span class="color-thumb-md bg-gray-91 color-text-lg text-gray-98"><span class="">NA</span></span></td> 
+           <td><span class="color-thumb-md bg-gray-91 color-text-lg text-gray-98"><span class="">NA</span></span></td> 
+          </tr> 
+          <tr> 
+           <td>
+            <div class="color-thumb bg-blue-27" style=""></div> 
+            <div class="color-content" style=""> 
+             <span class="color-variable">$lp-color-blue-27: #004370;</span> 
+            </div></td> 
+           <td><span class="color-thumb-md bg-blue-27"><span class="color-text-lg text-gray-100">Aa</span></span></td> 
+           <td><span class="color-thumb-md bg-blue-27"><span class="color-text-lg text-blue-99">Aa</span></span></td> 
+           <td><span class="color-thumb-md bg-blue-27"><span class="color-text-lg text-blue-96">Aa</span></span></td> 
+           <td><span class="color-thumb-md bg-blue-27"><span class="color-text-lg text-blue-90">Aa</span></span></td> 
+           <td><span class="color-thumb-md bg-blue-27"><span class="color-text-lg text-blue-84">Aa</span></span></td> 
+           <td><span class="color-thumb-md bg-gray-91 color-text-lg text-gray-98"><span class="">NA</span></span></td> 
+           <td><span class="color-thumb-md bg-gray-91 color-text-lg text-gray-98"><span class="">NA</span></span></td> 
+           <td><span class="color-thumb-md bg-gray-91 color-text-lg text-gray-98"><span class="">NA</span></span></td> 
+           <td><span class="color-thumb-md bg-gray-91 color-text-lg text-gray-98"><span class="">NA</span></span></td> 
+          </tr> 
+          <tr> 
+           <td>
+            <div class="color-thumb bg-blue-33" style=""></div> 
+            <div class="color-content" style=""> 
+             <span class="color-variable">$lp-color-blue-33: #00538A;</span> 
+            </div></td> 
+           <td><span class="color-thumb-md bg-blue-33"><span class="color-text-lg text-gray-100">Aa</span></span></td> 
+           <td><span class="color-thumb-md bg-blue-33"><span class="color-text-lg text-blue-99">Aa</span></span></td> 
+           <td><span class="color-thumb-md bg-blue-33"><span class="color-text-lg text-blue-96">Aa</span></span></td> 
+           <td><span class="color-thumb-md bg-blue-33"><span class="color-text-lg text-blue-90">Aa</span></span></td> 
+           <td><span class="color-thumb-md bg-blue-33"><span class="color-text-lg text-blue-84">Aa</span></span></td> 
+           <td><span class="color-thumb-md bg-gray-91 color-text-lg text-gray-98"><span class="">NA</span></span></td> 
+           <td><span class="color-thumb-md bg-gray-91 color-text-lg text-gray-98"><span class="">NA</span></span></td> 
+           <td><span class="color-thumb-md bg-gray-91 color-text-lg text-gray-98"><span class="">NA</span></span></td> 
+           <td><span class="color-thumb-md bg-gray-91 color-text-lg text-gray-98"><span class="">NA</span></span></td> 
+          </tr> 
+          <tr> 
+           <td>
+            <div class="color-thumb bg-blue-45" style=""></div> 
+            <div class="color-content" style=""> 
+             <span class="color-variable">$lp-color-blue-45: #0071bc;</span> 
+            </div></td> 
+           <td><span class="color-thumb-md bg-blue-45"><span class="color-text-lg text-gray-100">Aa</span></span></td> 
+           <td><span class="color-thumb-md bg-blue-45"><span class="color-text-lg text-blue-99">Aa</span></span></td> 
+           <td><span class="color-thumb-md bg-blue-45"><span class="color-text-lg text-blue-96">Aa</span></span></td> 
+           <td><span class="color-thumb-md bg-gray-91 color-text-lg text-gray-98"><span class="">NA</span></span></td> 
+           <td><span class="color-thumb-md bg-gray-91 color-text-lg text-gray-98"><span class="">NA</span></span></td> 
+           <td><span class="color-thumb-md bg-gray-91 color-text-lg text-gray-98"><span class="">NA</span></span></td> 
+           <td><span class="color-thumb-md bg-gray-91 color-text-lg text-gray-98"><span class="">NA</span></span></td> 
+           <td><span class="color-thumb-md bg-gray-91 color-text-lg text-gray-98"><span class="">NA</span></span></td> 
+           <td><span class="color-thumb-md bg-gray-91 color-text-lg text-gray-98"><span class="">NA</span></span></td> 
+          </tr> 
+          <tr> 
+           <td>
+            <div class="color-thumb bg-blue-84" style=""></div> 
+            <div class="color-content" style=""> 
+             <span class="color-variable">$lp-color-blue-84: #A3DAFF;</span> 
+            </div></td> 
+           <td><span class="color-thumb-md bg-gray-91 color-text-lg text-gray-98"><span class="">NA</span></span></td> 
+           <td><span class="color-thumb-md bg-gray-91 color-text-lg text-gray-98"><span class="">NA</span></span></td> 
+           <td><span class="color-thumb-md bg-gray-91 color-text-lg text-gray-98"><span class="">NA</span></span></td> 
+           <td><span class="color-thumb-md bg-gray-91 color-text-lg text-gray-98"><span class="">NA</span></span></td> 
+           <td><span class="color-thumb-md bg-gray-91 color-text-lg text-gray-98"><span class="">NA</span></span></td> 
+           <td><span class="color-thumb-md bg-gray-91 color-text-lg text-gray-98"><span class="">NA</span></span></td> 
+           <td><span class="color-thumb-md bg-blue-84"><span class="color-text-lg text-blue-33">Aa</span></span></td> 
+           <td><span class="color-thumb-md bg-blue-84"><span class="color-text-lg text-blue-27">Aa</span></span></td> 
+           <td><span class="color-thumb-md bg-blue-84"><span class="color-text-lg text-blue-21">Aa</span></span></td> 
+          </tr> 
+          <tr> 
+           <td>
+            <div class="color-thumb bg-blue-90" style=""></div> 
+            <div class="color-content" style=""> 
+             <span class="color-variable">$lp-color-blue-90: #CDE7F9;</span> 
+            </div></td> 
+           <td><span class="color-thumb-md bg-gray-91 color-text-lg text-gray-98"><span class="">NA</span></span></td> 
+           <td><span class="color-thumb-md bg-gray-91 color-text-lg text-gray-98"><span class="">NA</span></span></td> 
+           <td><span class="color-thumb-md bg-gray-91 color-text-lg text-gray-98"><span class="">NA</span></span></td> 
+           <td><span class="color-thumb-md bg-gray-91 color-text-lg text-gray-98"><span class="">NA</span></span></td> 
+           <td><span class="color-thumb-md bg-gray-91 color-text-lg text-gray-98"><span class="">NA</span></span></td> 
+           <td><span class="color-thumb-md bg-gray-91 color-text-lg text-gray-98"><span class="">NA</span></span></td> 
+           <td><span class="color-thumb-md bg-blue-90"><span class="color-text-lg text-blue-33">Aa</span></span></td> 
+           <td><span class="color-thumb-md bg-blue-90"><span class="color-text-lg text-blue-27">Aa</span></span></td> 
+           <td><span class="color-thumb-md bg-blue-90"><span class="color-text-lg text-blue-21">Aa</span></span></td> 
+          </tr> 
+          <tr> 
+           <td>
+            <div class="color-thumb bg-blue-96" style=""></div> 
+            <div class="color-content" style=""> 
+             <span class="color-variable">$lp-color-blue-96: #E9F7FD;</span> 
+            </div></td> 
+           <td><span class="color-thumb-md bg-gray-91 color-text-lg text-gray-98"><span class="">NA</span></span></td> 
+           <td><span class="color-thumb-md bg-gray-91 color-text-lg text-gray-98"><span class="">NA</span></span></td> 
+           <td><span class="color-thumb-md bg-gray-91 color-text-lg text-gray-98"><span class="">NA</span></span></td> 
+           <td><span class="color-thumb-md bg-gray-91 color-text-lg text-gray-98"><span class="">NA</span></span></td> 
+           <td><span class="color-thumb-md bg-gray-91 color-text-lg text-gray-98"><span class="">NA</span></span></td> 
+           <td><span class="color-thumb-md bg-blue-96"><span class="color-text-lg text-blue-45">Aa</span></span></td> 
+           <td><span class="color-thumb-md bg-blue-96"><span class="color-text-lg text-blue-33">Aa</span></span></td> 
+           <td><span class="color-thumb-md bg-blue-96"><span class="color-text-lg text-blue-27">Aa</span></span></td> 
+           <td><span class="color-thumb-md bg-blue-96"><span class="color-text-lg text-blue-21">Aa</span></span></td> 
+          </tr> 
+          <tr> 
+           <td>
+            <div class="color-thumb bg-blue-99" style=""></div> 
+            <div class="color-content" style=""> 
+             <span class="color-variable">$lp-color-blue-99: #F6FCFF;</span> 
+            </div></td> 
+           <td><span class="color-thumb-md bg-gray-91 color-text-lg text-gray-98"><span class="">NA</span></span></td> 
+           <td><span class="color-thumb-md bg-gray-91 color-text-lg text-gray-98"><span class="">NA</span></span></td> 
+           <td><span class="color-thumb-md bg-gray-91 color-text-lg text-gray-98"><span class="">NA</span></span></td> 
+           <td><span class="color-thumb-md bg-gray-91 color-text-lg text-gray-98"><span class="">NA</span></span></td> 
+           <td><span class="color-thumb-md bg-gray-91 color-text-lg text-gray-98"><span class="">NA</span></span></td> 
+           <td><span class="color-thumb-md bg-blue-99"><span class="color-text-lg text-blue-45">Aa</span></span></td> 
+           <td><span class="color-thumb-md bg-blue-99"><span class="color-text-lg text-blue-33">Aa</span></span></td> 
+           <td><span class="color-thumb-md bg-blue-99"><span class="color-text-lg text-blue-27">Aa</span></span></td> 
+           <td><span class="color-thumb-md bg-blue-99"><span class="color-text-lg text-blue-21">Aa</span></span></td> 
+          </tr> 
+         </tbody> 
+        </table> 
+       </div> 
+       <hr> 
+       <div class="row" style=""> 
+        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12" style=""> 
+         <h4>Notifications Colors</h4> 
+         <div class="world-bank-brand" style=""> 
+          <ul class="row"> 
+           <li class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-xs-12 mrg-b-32"> 
+            <div class="color-thumb-lg bg-blue-45" style="">
+             <span class="color-text-lg font-white">#0071bc</span>
+            </div> 
+            <div class="color-content" style=""> 
+             <span class="color-variable">$lp-color-blue-45; #0071bc;</span> 
+             <p class="color-blurb"></p> 
+            </div> </li> 
+           <li class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-xs-12 mrg-b-32"> 
+            <div class="color-thumb-lg bg-green-50" style="">
+             <span class="color-text-lg font-white">#3A8604</span>
+            </div> 
+            <div class="color-content" style=""> 
+             <span class="color-variable">$lp-color-green-50; #3A8604;</span> 
+             <p class="color-blurb"></p> 
+            </div> </li> 
+           <li class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-xs-12 mrg-b-32"> 
+            <div class="color-thumb-lg bg-red-44" style="">
+             <span class="color-text-lg font-white">#C52816</span>
+            </div> 
+            <div class="color-content" style=""> 
+             <span class="color-variable">$lp-color-red-44: #C52816;</span> 
+             <p class="color-blurb"></p> 
+            </div> </li> 
+           <li class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-xs-12 mrg-b-32"> 
+            <div class="color-thumb-lg bg-yellow-62" style="">
+             <span class="color-text-lg font-white">#CC8500</span>
+            </div> 
+            <div class="color-content" style=""> 
+             <span class="color-variable">$lp-color-yellow-62: #CC8500;</span> 
+             <p class="color-blurb"></p> 
+            </div> </li> 
+          </ul> 
+         </div> 
+        </div> 
+       </div> 
+       <hr> 
+       <div class="row" style=""> 
+        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12" style=""> 
+         <h4>Accent Colors Base</h4> 
+         <div class="world-bank-brand" style=""> 
+          <ul class="row"> 
+           <li class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-xs-12 mrg-b-32"> 
+            <div class="color-thumb-lg bg-accent-blue-61" style="">
+             <span class="color-text-lg font-white">#169AF3</span>
+            </div> 
+            <div class="color-content" style=""> 
+             <span class="color-variable">$lp-Accent-blue-61 :#169AF3;</span> 
+             <p class="color-blurb"></p> 
+            </div> </li> 
+           <li class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-xs-12 mrg-b-32"> 
+            <div class="color-thumb-lg bg-accent-green-69" style="">
+             <span class="color-text-lg font-white">#4CBB88</span>
+            </div> 
+            <div class="color-content" style=""> 
+             <span class="color-variable">$lp-Accent-green-69: #4CBB88;</span> 
+             <p class="color-blurb"></p> 
+            </div> </li> 
+           <li class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-xs-12 mrg-b-32"> 
+            <div class="color-thumb-lg bg-accent-magenta-57" style="">
+             <span class="color-text-lg font-white">#FD1CAA</span>
+            </div> 
+            <div class="color-content" style=""> 
+             <span class="color-variable">$lp-Accent-magenta-57: #FD1CAA;</span> 
+             <p class="color-blurb"></p> 
+            </div> </li> 
+           <li class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-xs-12 mrg-b-32"> 
+            <div class="color-thumb-lg bg-accent-orange-57" style="">
+             <span class="color-text-lg font-white">#EC553A</span>
+            </div> 
+            <div class="color-content" style=""> 
+             <span class="color-variable">$lp-Accent-orange-57: #EC553A;</span> 
+             <p class="color-blurb"></p> 
+            </div> </li> 
+           <li class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-xs-12 mrg-b-32"> 
+            <div class="color-thumb-lg bg-accent-purple-56" style="">
+             <span class="color-text-lg font-white">#B25DFE</span>
+            </div> 
+            <div class="color-content" style=""> 
+             <span class="color-variable">$lp-Accent-purple-56: #B25DFE;</span> 
+             <p class="color-blurb"></p> 
+            </div> </li> 
+           <li class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-xs-12 mrg-b-32"> 
+            <div class="color-thumb-lg bg-accent-teal-57" style="">
+             <span class="color-text-lg font-white">#0298AC</span>
+            </div> 
+            <div class="color-content" style=""> 
+             <span class="color-variable">$lp-Accent-teal-57: #0298AC;</span> 
+             <p class="color-blurb"></p> 
+            </div> </li> 
+           <li class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-xs-12 mrg-b-32"> 
+            <div class="color-thumb-lg bg-accent-yellow-80" style="">
+             <span class="color-text-lg font-white">#FDB714</span>
+            </div> 
+            <div class="color-content" style=""> 
+             <span class="color-variable">$lp-Accent-yellow-80: #FDB714;</span> 
+             <p class="color-blurb"></p> 
+            </div> </li> 
+          </ul> 
+         </div> 
+        </div> 
+       </div> 
+       <hr> 
+       <div class="row" style=""> 
+        <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12" style=""> 
+         <h4>Accessible Colors</h4> 
+        </div> 
+        <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12" style=""> 
+         <div class="row" style=""> 
+          <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-xs-12 mrg-b-32" style=""> 
+           <h6>Blue</h6> 
+           <div class="color-thumb-lg bg-blue-99 font-black-87" style="">
+            02
+           </div> 
+           <div class="color-thumb-lg bg-blue-96 font-black-87" style="">
+            03
+           </div> 
+           <div class="color-thumb-lg bg-blue-90 font-black-87" style="">
+            04
+           </div> 
+           <div class="color-thumb-lg bg-blue-84 font-black-87" style="">
+            05
+           </div> 
+           <div class="color-thumb-lg bg-blue-45 font-white" style="">
+            06
+           </div> 
+           <div class="color-thumb-lg bg-blue-33 font-white" style="">
+            07
+           </div> 
+           <div class="color-thumb-lg bg-blue-27 font-white" style="">
+            08
+           </div> 
+           <div class="color-thumb-lg bg-blue-21 font-white" style="">
+            09
+           </div> 
+          </div> 
+          <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-xs-12 mrg-b-32" style=""> 
+           <h6>Green</h6> 
+           <div class="color-thumb-lg bg-accessible-green-97 font-black-87" style="">
+            02
+           </div> 
+           <div class="color-thumb-lg bg-accessible-green-87 font-black-87" style="">
+            03
+           </div> 
+           <div class="color-thumb-lg bg-accessible-green-71 font-black-87" style="">
+            04
+           </div> 
+           <div class="color-thumb-lg bg-accessible-green-58 font-black-87" style="">
+            05
+           </div> 
+           <div class="color-thumb-lg bg-accessible-green-44 font-white" style="">
+            06
+           </div> 
+           <div class="color-thumb-lg bg-accessible-green-40 font-white" style="">
+            07
+           </div> 
+           <div class="color-thumb-lg bg-accessible-green-35 font-white" style="">
+            08
+           </div> 
+           <div class="color-thumb-lg bg-accessible-green-31 font-white" style="">
+            09
+           </div> 
+          </div> 
+          <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-xs-12 mrg-b-32" style=""> 
+           <h6>Magenta</h6> 
+           <div class="color-thumb-lg bg-accessible-magenta-94 font-black-87" style="">
+            02
+           </div> 
+           <div class="color-thumb-lg bg-accessible-magenta-80 font-black-87" style="">
+            03
+           </div> 
+           <div class="color-thumb-lg bg-accessible-magenta-70 font-black-87" style="">
+            04
+           </div> 
+           <div class="color-thumb-lg bg-accessible-magenta-61 font-black-87" style="">
+            05
+           </div> 
+           <div class="color-thumb-lg bg-accessible-magenta-49 font-white" style="">
+            06
+           </div> 
+           <div class="color-thumb-lg bg-accessible-magenta-38 font-white" style="">
+            07
+           </div> 
+           <div class="color-thumb-lg bg-accessible-magenta-26 font-white" style="">
+            08
+           </div> 
+           <div class="color-thumb-lg bg-accessible-magenta-13 font-white" style="">
+            09
+           </div> 
+          </div> 
+          <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-xs-12 mrg-b-32" style=""> 
+           <h6>Orange</h6> 
+           <div class="color-thumb-lg bg-accessible-orange-94 font-black-87" style="">
+            02
+           </div> 
+           <div class="color-thumb-lg bg-accessible-orange-87 font-black-87" style="">
+            03
+           </div> 
+           <div class="color-thumb-lg bg-accessible-orange-76 font-black-87" style="">
+            04
+           </div> 
+           <div class="color-thumb-lg bg-accessible-orange-66 font-black-87" style="">
+            05
+           </div> 
+           <div class="color-thumb-lg bg-accessible-orange-51 font-white" style="">
+            06
+           </div> 
+           <div class="color-thumb-lg bg-accessible-orange-40 font-white" style="">
+            07
+           </div> 
+           <div class="color-thumb-lg bg-accessible-orange-29 font-white" style="">
+            08
+           </div> 
+           <div class="color-thumb-lg bg-accessible-orange-18 font-white" style="">
+            09
+           </div> 
+          </div> 
+          <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-xs-12 mrg-b-32" style=""> 
+           <h6>Teal</h6> 
+           <div class="color-thumb-lg bg-accessible-teal-97 font-black-87" style="">
+            02
+           </div> 
+           <div class="color-thumb-lg bg-accessible-teal-92 font-black-87" style="">
+            03
+           </div> 
+           <div class="color-thumb-lg bg-accessible-teal-79 font-black-87" style="">
+            04
+           </div> 
+           <div class="color-thumb-lg bg-accessible-teal-63 font-black-87" style="">
+            05
+           </div> 
+           <div class="color-thumb-lg bg-accessible-teal-47 font-white" style="">
+            06
+           </div> 
+           <div class="color-thumb-lg bg-accessible-teal-43 font-white" style="">
+            07
+           </div> 
+           <div class="color-thumb-lg bg-accessible-teal-36 font-white" style="">
+            08
+           </div> 
+           <div class="color-thumb-lg bg-accessible-teal-30 font-white" style="">
+            09
+           </div> 
+          </div> 
+          <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-xs-12 mrg-b-32" style=""> 
+           <h6>Yellow</h6> 
+           <div class="color-thumb-lg bg-accessible-yellow-98 font-black-87" style="">
+            02
+           </div> 
+           <div class="color-thumb-lg bg-accessible-yellow-91 font-black-87" style="">
+            03
+           </div> 
+           <div class="color-thumb-lg bg-accessible-yellow-81 font-black-87" style="">
+            04
+           </div> 
+           <div class="color-thumb-lg bg-accessible-yellow-70 font-black-87" style="">
+            05
+           </div> 
+           <div class="color-thumb-lg bg-accessible-yellow-39 font-white" style="">
+            08
+           </div> 
+           <div class="color-thumb-lg bg-accessible-yellow-23 font-white" style="">
+            09
+           </div> 
+          </div> 
+         </div> 
+        </div> 
+       </div>
+       <p></p> 
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+  </main> 
+  <footer class="loop-site-footer" role="contentinfo"> 
+   <div class="loop-site-footer-info" style=""> 
+    <div class="container" style=""> 
+     <div class="row" style=""> 
+      <div class="col-xl-10" style=""> 
+       <div class="loop-copyright" style="">
+         © 
+        <script language="JavaScript">
+						<!-- Begin
+						var time=new Date();
+						var year=time.getYear();
+						if (year < 2000)
+						year = year + 1900;
+						document.write(year);// End --></script> The World Bank Group, All Rights Reserved. 
+        <!-- <p>Copyright © 2017 World Bank Group.  All rights reserved. Version 1.0.0 latest update on June 27th 2017.</p> -->
+       </div> 
+      </div>
+      <!-- End left column --> 
+      <div class="col-xl-2" style=""> 
+       <div class="loop-contactus" style="">
+        <a href="contacts.html">CONTACT US</a>
+       </div> 
+      </div>
+      <!-- End left column --> 
+     </div> 
+    </div> 
+   </div> 
+  </footer> 
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script> 
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> 
+  <script type="text/javascript" src="http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script> 
+  <script src="content/dam/loop/assets/js/styleguide.js"></script> 
+  <script type="text/javascript">
+ $(document).on('ready', function() {
+      $('.slide_1').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: true,
+        autoplay: true,
+          speed: 1000,
+        arrows: false,
+      });
+});
+
+ $(document).on('ready', function() {
+      $('.slide_4').slick({
+        infinite: false,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        adaptiveHeight: false,
+        dots: false,
+        responsive: [
+          {
+            breakpoint: 1200,
+            settings: {
+              slidesToShow: 3
+            }
+          },
+          {
+            breakpoint: 992,
+            settings: {
+              slidesToShow: 2,
+            }
+          },
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 2,
+              
+            }
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 1,
+              adaptiveHeight: true
+            }
+          }
+        ]
+      });
+});
+
+if ($(window).width() > 768) {
+function equalHeight(group) {
+    tallest = 0;
+    group.each(function() {
+        thisHeight = $(this).height();
+        if(thisHeight > tallest) {
+            tallest = thisHeight;
+        }
+    });
+    group.height(tallest);
+}
+ 
+$(document).ready(function(){
+    equalHeight($(".icon-list-thumb"));
+});
+}
+
+$("#dropdown-tab li a").click(function(e){
+        $(this).closest(".open").find(".filter-option").text($(this).text());
+        var cIndex = $( "#dropdown-tab li a" ).index(this);
+
+        $(".dropdown-tabshow").each(function(){
+            $(this).hide();
+        });
+        $(".dropdown-tabindex"+cIndex).show();
+        $(".dropdown-tabindex"+cIndex).css("visibility", "visible");
+        $(".dropdown-tabindex"+cIndex).css("height", "auto");
+        $(".dropdown-tabindex"+cIndex).css("opacity", "1");
+     
+    });
+
+    // begin Left Nav toggle
+  function toggleclass(element,elemMore){ 
+    $(element).toggle();      
+    if($(element).is(":visible")){
+      $(elemMore).html('<i class="loop loop-angle-up"></i>');
+    }else{
+      $(elemMore).html('<i class="loop loop-angle-down"></i>');
+    }
+  }
+// end Left Nav toggle
+  </script> 
+  <script src="content/dam/loop/assets/js/vendor/loop.js"></script>   
+ </body>
+</html>
+
+

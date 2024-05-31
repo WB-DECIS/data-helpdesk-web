@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200px" height="200px" viewBox="0 0 200 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>Oval 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="93" cy="93" r="93"></circle>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <circle id="Oval-2" fill="#FFFFFF" cx="100" cy="100" r="100"></circle>
+        <g id="Bitmap" transform="translate(7.000000, 7.000000)">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="Mask" fill="#009FDA" xlink:href="#path-1"></use>
+            <polygon id="shadow" fill-opacity="0.1" fill="#000000" mask="url(#mask-2)" points="132.964365 55.2770121 236.187647 156.125258 166.136055 214.723209 92.6401459 137.488244"></polygon>
+            <g id="badge" mask="url(#mask-2)">
+                <g transform="translate(51.764151, 50.009434)">
+                    <path d="M1.92913635,4.16949209 C6.78545268,10.5509042 41.8318118,8.37464392 41.4068412,0.464708776 C40.9818707,-7.44522637 41.8318118,88.241684 41.8318118,88.241684 C41.8318118,88.241684 24.9974957,88.241684 9.83907149,62.9045304 C-2.60510558,42.1042136 -0.680829211,0.739883143 1.92913635,4.16949209 Z" id="Path-3" fill="#3E526B"></path>
+                    <path d="M42.2876269,4.16949209 C47.1439433,10.5509042 82.1903023,8.37464392 81.7653318,0.464708776 C81.3403613,-7.44522637 82.1903023,88.241684 82.1903023,88.241684 C82.1903023,88.241684 65.3559863,88.241684 50.1975621,62.9045304 C37.753385,42.1042136 39.6776614,0.739883143 42.2876269,4.16949209 Z" id="Path-3" fill="#2B3A4B" transform="translate(61.274396, 44.120842) scale(-1, 1) translate(-61.274396, -44.120842) "></path>
+                    <ellipse id="Oval-3" fill="#FFFFFF" cx="41.2358491" cy="42.1132075" rx="21.0566038" ry="21.0566038"></ellipse>
+                </g>
+            </g>
+            <polygon id="Path-4" fill="#FB7C8C" mask="url(#mask-2)" points="84.5635766 94.4019775 86.6393123 91.1093936 92.2269921 94.8374237 99.0353399 85.0715345 102.110746 87.2465825 92.8894378 100.061686"></polygon>
+        </g>
+    </g>
+</svg>
