@@ -14,7 +14,7 @@ https://datahelpdesk.worldbank.org/admin
 - https://help.uservoice.com/hc/en-us/articles/360035473793-Custom-HTML-CSS-and-JavaScript
 - https://help.uservoice.com/hc/en-us/articles/360035070154-Advanced-CSS-Custom-Design-with-body-Classes 
 
-## Design frames
+## Template pages
 - legacy design: https://wb-decis.github.io/data-helpdesk-web/client_legacy/data_helpdesk_web_frame.html
 - new design: https://wb-decis.github.io/data-helpdesk-web/client/data_helpdesk_web_frame.html
 
