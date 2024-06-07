@@ -19,5 +19,5 @@ https://datahelpdesk.worldbank.org/admin
 - new design: https://wb-decis.github.io/data-helpdesk-web/client/data_helpdesk_web_frame.html
 
 ## Snapshots
-- https://wb-decis.github.io/data-helpdesk-web/snapshot_20240529_1153am.html
-- https://wb-decis.github.io/data-helpdesk-web/snapshot_20240607_1430pm.html
+- https://wb-decis.github.io/data-helpdesk-web/snapshots/snapshot_20240529_1153am.html
+- https://wb-decis.github.io/data-helpdesk-web/snapshots/snapshot_20240607_1430pm.html
