@@ -20,3 +20,4 @@ https://datahelpdesk.worldbank.org/admin
 
 ## Snapshots
 - https://wb-decis.github.io/data-helpdesk-web/snapshot_20240529_1153am.html
+- https://wb-decis.github.io/data-helpdesk-web/snapshot_20240607_1430pm.html
