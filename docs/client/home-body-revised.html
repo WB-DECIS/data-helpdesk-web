@@ -1,0 +1,213 @@
+<!-- HOME PAGE -->
+<!-- =========================================================================================== -->
+<div class="uvContainer uvBody">
+
+  <div class="uvRow uvHomePageContent">
+
+    <div class="uvCol-8" data-ajaxTarget="homepage-content">
+
+      <article>
+        <header class="uvPageHeader">
+          <h1 style="margin: 30px 10px 30px 0px" class="uvPageTitle uvCustomPrimary-color">{{ site.title }}
+          </h1>
+        </header>
+      </article>
+
+      <!-- BEGIN site welcome message  -->
+      {% if site.body_html %}
+      <div style="margin: 15px 15px 15px 0px" class="uvModule uvModule-message typeset">
+        Welcome to the World Bank's Data Help Desk. The Help Desk is here to answer your questions about data from
+        the World Bank and encourage a dialogue about how we can improve them.
+      </div>
+      <!-- END  -->
+      <!-- BEGIN Breadcrumbs  -->
+      <ol class="lp__breadcrumb_list lp__no_padding">
+        <li class="lp__breadcrumb_list_item"><a href="#knowledgebase">Browse Knowledge Base</a></li>
+        <li class="lp__breadcrumb_list_item"><a href="#givefeedback">Give Feedback</a></li>
+        <li class="lp__breadcrumb_list_item"><a href="javascript:UserVoice.showPopupWidget()">Contact Support</a>
+        </li>
+      </ol>
+      {% endif %}
+      <!-- END  -->
+
+
+      <!-- BEGIN multi-forum module  -->
+      {% if site.feedback_ui_enabled %}
+      {% if site.forums_count > 1 %}
+      <div class="uvModule uvModule-featuredForum">
+        <header class="uvModuleHeader">
+          <h3 class="uvModuleTitle uvCustomPrimary-color">
+            <a href="{{ site.default_forum.path }}">{{ 'Give feedback' | translate }}</a>
+          </h3>
+        </header>
+        <section class="uvModuleSection uvModuleSection-featuredIdeas half-width">
+          <h5 class="uvModuleSectionHeader uvCustomPrimary-color">
+            {{ 'Feedback forums' | translate }}
+          </h5>
+          <ul class="uvList uvList-forums{% if site.forums_count > 5 %} uvList-forums-2col{% endif %}"
+            data-tmpl="portalAltForumsTmpl">
+            <div class="">
+              <ul class="lp__link_list">
+                {% for forum in site.forums %}
+                <li class="lp__link_list_item">
+                  <a href="{{ forum.path }}">{{ forum.name }}</a>
+                  {% if forum.is_private %}
+                  <span class="uvIcon-private-10">({{ 'private' | translate }})</span>
+                  {% endif %}
+                </li>
+                {% endfor %}
+              </ul>
+            </div>
+          </ul>
+        </section>
+
+        {% unless site.write_only_forums %}
+        {% if site.recently_updated_suggestions.size > 0 %}
+        <section class="uvModuleSection uvModuleSection-recentlyUpdatedIdeas">
+          <h5 class="uvModuleSectionHeader uvCustomPrimary-color">{{ 'Recently updated ideas' |
+            translate }}</h5>
+          <div class="">
+            <ul class="lp__link_list">
+              {% for suggestion in site.recently_updated_suggestions limit: 3 %}
+              <li class="lp__link_list_item">
+                <a href="{{ suggestion.path }}">{{ suggestion.title
+                  }}</a>
+              </li>
+              {% endfor %}
+            </ul>
+          </div>
+        </section>
+        {% endif %}
+        {% endunless %}
+      </div>
+      <!-- END multi-forum module  -->
+      {% else %}
+      {% unless site.write_only_forums %}
+      {% if site.first_forum %}
+      <!-- BEGIN single forum module  -->
+      <div class="uvModule uvModule-featuredForum">
+        <header class="uvModuleHeader">
+          <h2 class="uvModuleTitle uvCustomPrimary-color"><a href="{{ site.first_forum.path }}">{{
+              site.first_forum.prompt | translate }}&nbsp;<span class="uvStyle-linkArrow">&#8594;</span></a></h2>
+        </header>
+        <section class="uvModuleSection uvModuleSection-featuredIdeas">
+          <h3 class="uvModuleSectionHeader uvCustomPrimary-color">
+            {{ 'Top ideas from the community' | translate }}
+            {% if site.first_forum.suggestions_count > 0 %}
+            <a href="{{ site.first_forum.path }}"
+              class="uvModuleSectionHeaderMeta">({{site.first_forum.suggestions_count }} {{
+              'ideas' | translate }})</a>
+            {% endif %}
+          </h3>
+          {% if site.first_forum.has_suggestions %}
+          <ul class="uvList uvList-ideas">
+            {% for suggestion in site.first_forum.suggestions limit: 3 %}
+            <li class="uvListItem uvListItem-idea-{{ suggestion.id }} uvIdea uvIdea-small">
+              {% render_suggestion suggestion %}
+            </li>
+            {% endfor %}
+            <li class="uvListItem uvListItem-postNewIdea"><a href="{{ site.first_forum.path }}">{{ 'Post a new idea' |
+                translate
+                }}&nbsp;<span class="uvStyle-linkArrow">&#8594;</span></a></li>
+          </ul>
+          {% endif %}
+        </section>
+        {% if site.first_forum.recently_updated_suggestions.size > 0 %}
+        <section class="uvModuleSection uvModuleSection-recentlyUpdatedIdeas">
+          <h3 class="uvModuleSectionHeader uvCustomPrimary-color">{{ 'Recently updated ideas' |
+            translate }}</h3>
+          <ul class="uvList uvList-recentlyUpdatedIdeas">
+            {% for suggestion in site.first_forum.recently_updated_suggestions limit: 3 %}
+            <li class="uvListItem uvListItem-idea-{{ suggestion.id }} uvIdea uvIdea-small">
+              <h4 class="uvListItemHeader"><a href="{{ suggestion.path }}">{{ suggestion.title
+                  }}</a></h4>
+              <p class="uvStyle-meta">
+                {% if suggestion.status_name != nil %}
+                <a href="{{ suggestion.status_path }}"
+                  title="View other {{ suggestion.status_name }} ideas like {{ suggestion.title }}"><em
+                    class="uvStyle-status {{ suggestion.status_class }}">{{
+                    suggestion.status_name | translate }}</em></a>
+                {% endif %}
+                {{ 'Updated' | translate }}
+                {{ suggestion.translated_updated_at }}
+              </p>
+            </li>
+            {% endfor %}
+          </ul>
+        </section>
+        {% endif %}
+      </div>
+      <!-- END single forum module  -->
+      {% endif %}
+      {% endunless %}
+      {% endif %}
+      {% endif %}
+
+
+      <!-- BEGIN knowledge base module  -->
+      {% if site.knowledgebase_ui_enabled and site.has_articles %}
+      <div class="uvModule uvModule-knowledgebase">
+        <header class="uvModuleHeader flex">
+          <h3 class="uvModuleTitle uvCustomPrimary-color half-width">
+            <a href="/knowledgebase">{{ 'Knowledge Base' | translate }}</a>
+          </h3>
+
+          <a href="/knowledgebase/articles/all" class="list_articles_link">View list of all articles ></a>
+
+        </header>
+        <section class="uvModuleSection uvModuleSection-topics flex" style=" flex-wrap: wrap">
+          <ol class="uvKbTopics">
+            {% if site.has_topics %}
+            {% for section in site.topics %}
+            {% if section.has_articles %}
+            <li class="uvKbTopic uvKbTopic-{{ section.id }}">
+              <h5 class="uvKbTopicTitle uvCustomPrimary-color"><a href="{{ section.path }}">{{
+                  section.name }}</a>
+              </h5>
+              <ul class="lp__link_list">
+                {% for article in section.articles limit: 4 %}
+                <li class="lp__link_list_item flex">
+                  <div style=" display: flex;
+                        justify-content: center;
+                        align-items: center;">
+                    <span class="dot"></span>
+                  </div>
+                  <a href="{{ article.path }}">{{ article.title }}</a>
+                </li>
+                {% endfor %}
+              </ul>
+            </li>
+            {% endif %}
+            {% endfor %}
+            {% endif %}
+
+          </ol>
+
+        </section>
+      </div>
+      {% endif %}
+
+      {% if site.truncate_topics? %}
+      <div class="uvModule">
+        <header class="uvModuleHeader">
+          <h2 class="uvModuleTitle uvCustomPrimary-color">
+            {{ 'Looking for more articles? Find a topic in the sidebar.' | translate }} &rarr;
+          </h2>
+        </header>
+      </div>
+      {% endif %}
+
+      <!-- END knowledge base module  -->
+
+    </div>
+
+    <div class="uvCol-4 uvSidebar uvCol-last">
+      {{ render_user }}
+      {{ render_custom_top_sidebar }}
+      {{ render_sidebar }}
+      {{ render_custom_bottom_sidebar }}
+    </div>
+
+  </div>
+</div>
+<!-- =========================================================================================== -->

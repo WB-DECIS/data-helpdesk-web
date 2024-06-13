@@ -469,7 +469,7 @@ body #global-nav table#nav-table tr td a:visited {
 #custom-buttons a {
   float: left;
   display: block;
-  background: #a92123 url(uv-browse.png) 8px 50% no-repeat;
+  background: #009FDA url(uv-browse.png) 8px 50% no-repeat;
   border-radius: 4px;
   color: white;
   font-size: 15px;
