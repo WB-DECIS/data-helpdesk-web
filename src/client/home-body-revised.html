@@ -81,6 +81,68 @@
         {% endunless %}
       </div>
       <!-- END multi-forum module  -->
+      {% else %}
+      {% unless site.write_only_forums %}
+      {% if site.first_forum %}
+      <!-- BEGIN single forum module  -->
+      <div class="uvModule uvModule-featuredForum">
+        <header class="uvModuleHeader">
+          <h2 class="uvModuleTitle uvCustomPrimary-color"><a href="{{ site.first_forum.path }}">{{
+              site.first_forum.prompt | translate }}&nbsp;<span class="uvStyle-linkArrow">&#8594;</span></a></h2>
+        </header>
+        <section class="uvModuleSection uvModuleSection-featuredIdeas">
+          <h3 class="uvModuleSectionHeader uvCustomPrimary-color">
+            {{ 'Top ideas from the community' | translate }}
+            {% if site.first_forum.suggestions_count > 0 %}
+            <a href="{{ site.first_forum.path }}"
+              class="uvModuleSectionHeaderMeta">({{site.first_forum.suggestions_count }} {{
+              'ideas' | translate }})</a>
+            {% endif %}
+          </h3>
+          {% if site.first_forum.has_suggestions %}
+          <ul class="uvList uvList-ideas">
+            {% for suggestion in site.first_forum.suggestions limit: 3 %}
+            <li class="uvListItem uvListItem-idea-{{ suggestion.id }} uvIdea uvIdea-small">
+              {% render_suggestion suggestion %}
+            </li>
+            {% endfor %}
+            <li class="uvListItem uvListItem-postNewIdea"><a href="{{ site.first_forum.path }}">{{ 'Post a new idea' |
+                translate
+                }}&nbsp;<span class="uvStyle-linkArrow">&#8594;</span></a></li>
+          </ul>
+          {% endif %}
+        </section>
+        {% if site.first_forum.recently_updated_suggestions.size > 0 %}
+        <section class="uvModuleSection uvModuleSection-recentlyUpdatedIdeas">
+          <h3 class="uvModuleSectionHeader uvCustomPrimary-color">{{ 'Recently updated ideas' |
+            translate }}</h3>
+          <ul class="uvList uvList-recentlyUpdatedIdeas">
+            {% for suggestion in site.first_forum.recently_updated_suggestions limit: 3 %}
+            <li class="uvListItem uvListItem-idea-{{ suggestion.id }} uvIdea uvIdea-small">
+              <h4 class="uvListItemHeader"><a href="{{ suggestion.path }}">{{ suggestion.title
+                  }}</a></h4>
+              <p class="uvStyle-meta">
+                {% if suggestion.status_name != nil %}
+                <a href="{{ suggestion.status_path }}"
+                  title="View other {{ suggestion.status_name }} ideas like {{ suggestion.title }}"><em
+                    class="uvStyle-status {{ suggestion.status_class }}">{{
+                    suggestion.status_name | translate }}</em></a>
+                {% endif %}
+                {{ 'Updated' | translate }}
+                {{ suggestion.translated_updated_at }}
+              </p>
+            </li>
+            {% endfor %}
+          </ul>
+        </section>
+        {% endif %}
+      </div>
+      <!-- END single forum module  -->
+      {% endif %}
+      {% endunless %}
+      {% endif %}
+      {% endif %}
+
 
       <!-- BEGIN knowledge base module  -->
       {% if site.knowledgebase_ui_enabled and site.has_articles %}
