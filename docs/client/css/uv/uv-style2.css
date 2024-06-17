@@ -860,10 +860,9 @@ p.top-smlink {
 }
 
 .uvBody {
-  background: transparent;
+  background: #fff;
   border-top: none;
   padding: 25px 0;
-
   margin: 0 auto;
 }
 
@@ -919,6 +918,7 @@ p.top-smlink {
 
 .uvModule-topSidebar p {
   margin: 0 0 1em;
+  line-height: normal;
 }
 
 .uvModule-topSidebar p.last {
