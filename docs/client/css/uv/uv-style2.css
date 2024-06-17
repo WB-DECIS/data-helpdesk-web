@@ -3,7 +3,7 @@
 body.uv-primaryColor-dark {
   /* color:#403e3c; */
 
-  background: #dadccf;
+  background: #ffffff;
   margin: 0px 0px 20px;
   padding: 0px;
   text-align: center;
@@ -476,7 +476,7 @@ body #global-nav table#nav-table tr td a:visited {
   font-weight: bold;
   text-decoration: none;
   margin-right: 7px;
-  padding: 10px 10px 10px 38px;
+  padding: 10px 10px 10px 10px;
   width: 175px;
   height: 60px;
   text-align: center;
