@@ -24,3 +24,4 @@ https://datahelpdesk.worldbank.org/admin
 - https://wb-decis.github.io/data-helpdesk-web/snapshots/snapshot_20240612_1350pm.html
 - https://wb-decis.github.io/data-helpdesk-web/snapshots/snapshot_20240613_1530pm.html
 - https://wb-decis.github.io/data-helpdesk-web/snapshots/snapshot_20240613_1530pm_overridden_uv-primaryColor-dark.html
+- https://wb-decis.github.io/data-helpdesk-web/snapshots/snapshot_20240617_1530pm.html
