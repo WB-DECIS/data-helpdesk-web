@@ -2,7 +2,7 @@
 @font-face {
   font-family: "Andes";
   src: url("fonts/304244_1_0.eot");
-  src: url("fonts/304244_1_0.eot@") format("embedded-opentype");
+  src: url("fonts/304244_1_0.eot@") format("embedded-opentype"), url("fonts/304244_1_0.woff2") format("woff2"), url("fonts/304244_1_0.woff") format("woff"), url("fonts/304244_1_0.ttf") format("truetype");
 }
 @font-face {
   font-family: "Noto Naskh Arabic";
@@ -19,7 +19,7 @@
 @font-face {
   font-family: "loop-icon";
   src: url("fonts/loop-icon.eot@59hhla");
-  src: url("fonts/loop-icon.eot@59hhla") format("embedded-opentype");
+  src: url("fonts/loop-icon.eot@59hhla") format("embedded-opentype"), url("fonts/loop-icon.ttf@59hhla") format("truetype"), url("fonts/loop-icon.woff@59hhla") format("woff"), url("fonts/loop-icon.svg@59hhla") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;

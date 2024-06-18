@@ -35,6 +35,13 @@
       margin-bottom: 10px;
       min-height: 39px;
     }
+
+    .lp-footer-lang-dropdown .lang-filter-label[aria-expanded=false]:after {
+      content: "" !important;
+      font-size: 0.75rem;
+      color: #ffffff;
+      float: right;
+    }
   </style>
   <!-- =========================================================================================== -->
   <!-- end of CUSTOM CSS -->
@@ -117,6 +124,7 @@
                     <button type="submit" title="Search" class="search-submit-icon"
                       onclick="javascript:submit_search_form();"><span class="sr-only" aria-hidden="true">Search
                         button</span> </button>
+                    <!-- <input class="search-submit-icon" type="image" src="img/search-orange.svg" alt="listingsearch"> -->
                   </form>
                 </div>
                 <ul>
@@ -2138,8 +2146,8 @@
                       <span class="lang-lable" id="site-language">This Site in:</span>
                       <div class=" lp-lang-toggler" style="">
                         <button type="button" class="lang-filter-label" data-toggle="dropdown" aria-haspopup="true"
-                          aria-expanded="false" id="lang-title"
-                          aria-labelledby="site-language lang-title">English</button>
+                          aria-expanded="false" id="lang-title" aria-labelledby="site-language lang-title">English
+                          <img style="height: 19px; width: 15px;" src="img/loop-angle-down.svg" /></button>
                         <div class="lp__dropdown_menu dropdown-menu" aria-labelledby="site-language" style="">
                           <ul>
                             <li lang="es"><a class="dropdown-item" href="https://www.bancomundial.org/">Español</a></li>

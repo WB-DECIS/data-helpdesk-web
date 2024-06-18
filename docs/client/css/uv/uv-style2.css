@@ -476,6 +476,7 @@ body #global-nav table#nav-table tr td a:visited {
   font-weight: bold;
   text-decoration: none;
   margin-right: 7px;
+  margin-bottom: 7px;
   padding: 10px 10px 10px 10px;
   width: 175px;
   height: 60px;
